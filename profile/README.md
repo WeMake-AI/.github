@@ -1,35 +1,27 @@
-# 💙 WeMake - [AI](AI.md) / [PRODUCTS](PRODUCTS.md) / [SERVICES](SERVICES.md) / [ECOSYSTEM](ECOSYSTEM.md)
+# Company Handbuch
 
->*WE MAKE DIGITAL EASY AS FUCK*
+Hey! 👋
 
-WeMake is a dynamic, forward-looking team based in Hanover. By using the latest technology and our in-depth industry knowledge, we want to support companies on their journey to digital transformation. We are firmly convinced that a digitally oriented strategy is essential for companies to be successful in today's fast-paced, technology-driven world.
+Dieses Handbuch erklärt simpel, wie wir arbeiten – ohne Buzzword-Nebelmaschine, ohne Verkaufsbroschüre. Es ist der ungeschönte Blick auf das, was wir tun, warum wir es tun und wie wir jeden Tag besser darin werden. Wir veröffentlichen es öffentlich, weil Transparenz Vertrauen schafft – intern und extern. Wir sind remote-first, docs-first und menschenzentriert. Und ja: Wir sind stolz auf das, was uns anders macht. Noch stolzer sind wir auf die schwierige, konfrontative und manchmal riskante Arbeit, die nötig ist, damit “anders” nicht nur ein Etikett bleibt, sondern in echten Ergebnissen, echten Lösungen und echtem Wachstum sichtbar wird.
 
-## Our Ethics Policy
+Public by default. Verantwortung vor Rang. Ergebnisse vor Egos. Das ist die Kurzfassung. Der Rest folgt jetzt – ausführlich, konkret, und so, dass du damit arbeiten kannst.
 
-We consider ourselves a responsible team, committed not only to the well-being of our customers and the quality of our services, but also to the protection of our environment and each individual. Our ethics policy – capable and consistent – illustrates our core values and intentions. It marks a path towards a sustainable, fair and human-centered digital future.
+## Inhaltsverzeichnis
 
-### People and Environment Over Profit
+[1. Warum existiert WeMake?](../handbuch/1.md)  
+[2. Wie wir hierher gekommen sind](../handbuch/2.md)  
+[3. Wie wir Nutzer:innen gewinnen](../handbuch/3.md)  
+[4. Für wen wir entwickeln](../handbuch/4.md)  
+[5. Wie wir Nutzer:innen glücklich machen](../handbuch/5.md)  
+[6. Wie wir Geld verdienen](../handbuch/6.md)  
+[7. Dauerhaft niedrige Preise](../handbuch/7.md)  
+[8. Entscheidung über neue Lösungen](../handbuch/8.md)  
+[9. Ein breites Unternehmen mit kleinen Teams](../handbuch/9.md)  
+[10. Wie wir ein erstklassiges Team aufbauen](../handbuch/10.md)  
+[11. Was wir wertschätzen](../handbuch/11.md)  
+[12. Ein erstklassiges Arbeitsumfeld schaffen](../handbuch/12.md)  
+[13. Nicht das Geld ausgehen lassen](../handbuch/13.md)  
+[14. Wohin geht die Reise?](../handbuch/14.md)  
+[15. Wie du helfen kannst](../handbuch/15.md)
 
-We prioritize: people and their environment come before profit. It is important to us that we do not place profit maximization above the basic needs of our team, our customers, and society as a whole. We constantly review our work standards and conditions and adapt them to ensure the well-being of our team. We strive continuously to reduce our environmental impact and commit to sustainability in
-all our business processes.
-
-### Equal Opportunity and Non-Discrimination
-
-We are committed to equal opportunity for all, regardless of gender, age, race, sexual orientation, religion or disability. Any form of discrimination is not tolerated by us, both in the workplace and in our services and products. We also actively advocate for the rights and freedoms of minority groups, including, but not limited to, women, lesbian, gay, bi, trans, intersex and asexual individuals.
-
-### Solidarity and Strength in Collaboration
-
-We see our strengths in solidarity and collaboration. On the one hand, this is reflected in our open dialogue culture within the team and with our business partners and customers. On the other hand, in our commitment to a fair and inclusive digital transition.
-
-### Integrity and Transparent Business Practices
-
-We act with extraordinary integrity and transparency. We strictly distance ourselves from corrupt business practices and instead focus on sustainable relationships in line with our principles. Any violation of the values documented here leads to appropriate measures that match the severity of the violation.
-
-### Environmental Protection and Sustainability
-
-We recognize our responsibility towards the environment and tirelessly advocate for environmental protection. This includes the active promotion of green technologies, as well as the constant review and improvement of our own processes and the ecological footprint we leave behind.
-
-### Continuous Improvement and Accountability
-
-Our team, our customers and our partners have the right and are encouraged to point out ethical misconduct. For this purpose, we have mechanisms in place that allow violations to be reported anonymously and unimpeded. We are also committed to continuous self-reflection and further refinements. For this, we set clear and measurable goals, the fulfillment of which we periodically review and publicly
-document.
+Hinweise zu internen Referenzen und Quellen: Wo sinnvoll, verlinken wir auf weiterführende, interne Dokumente. Diese sind öffentlich einsehbar, solange sie keine vertraulichen Inhalte enthalten.
