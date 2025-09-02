@@ -1,4 +1,4 @@
-# 💙 WeMake - [AI](profile/AI.md) / [PRODUCTS](profile/PRODUCTS.md) / [SERVICES](profile/SERVICES.md) / [ECOSYSTEM](profile/ECOSYSTEM.md)
+# 💙 WeMake - [AI](AI.md) / [PRODUCTS](PRODUCTS.md) / [SERVICES](SERVICES.md) / [ECOSYSTEM](ECOSYSTEM.md)
 
 >*WE MAKE DIGITAL EASY AS FUCK*
 
