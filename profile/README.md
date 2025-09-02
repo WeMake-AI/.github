@@ -22,6 +22,6 @@ Public by default. Verantwortung vor Rang. Ergebnisse vor Egos. Das ist die Kurz
 [12. Ein erstklassiges Arbeitsumfeld schaffen](/handbuch/12.md)  
 [13. Nicht das Geld ausgehen lassen](/handbuch/13.md)  
 [14. Wohin geht die Reise?](/handbuch/14.md)  
-[15. Wie du helfen kannst](/handbuch/15.md)  
+[15. Wie du helfen kannst](/handbuch/15.md)
 
 Hinweise zu internen Referenzen und Quellen: Wo sinnvoll, verlinken wir auf weiterführende, interne Dokumente. Diese sind öffentlich einsehbar, solange sie keine vertraulichen Inhalte enthalten.
