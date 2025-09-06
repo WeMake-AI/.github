@@ -2,9 +2,7 @@
 
 Hey! 👋
 
-Dieses Handbuch erklärt simpel, wie wir arbeiten – ohne Buzzword-Nebelmaschine, ohne Verkaufsbroschüre. Es ist der ungeschönte Blick auf das, was wir tun, warum wir es tun und wie wir jeden Tag besser darin werden. Wir veröffentlichen es öffentlich, weil Transparenz Vertrauen schafft – intern und extern. Wir sind remote-first, docs-first und menschenzentriert. Und ja: Wir sind stolz auf das, was uns anders macht. Noch stolzer sind wir auf die schwierige, konfrontative und manchmal riskante Arbeit, die nötig ist, damit “anders” nicht nur ein Etikett bleibt, sondern in echten Ergebnissen, echten Lösungen und echtem Wachstum sichtbar wird.
-
-Public by default. Verantwortung vor Rang. Ergebnisse vor Egos. Das ist die Kurzfassung. Der Rest folgt jetzt – ausführlich, konkret, und so, dass du damit arbeiten kannst.
+Dieses Handbuch erklärt simpel, wie wir arbeiten. Es gehört zu den wichtigsten Dingen, die wir je gemacht haben.
 
 ## Inhaltsverzeichnis
 
