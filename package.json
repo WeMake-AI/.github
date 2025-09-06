@@ -9,6 +9,7 @@
     "@types/bun": "latest",
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
     "markdownlint": "^0.38.0",
     "markdownlint-cli2": "^0.18.1",
     "markdownlint-cli2-formatter-pretty": "^0.0.8",
@@ -22,7 +23,11 @@
     "lint:markdown": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\"",
     "lint:prettier": "prettier --check \"**/*.{md,mdx}\" \"!node_modules\"",
     "format": "prettier --write . && markdownlint-cli2 --fix \"**/*.{md,mdx}\" \"!node_modules\"",
-    "prepare": "husky",
+    "prepare": "husky install",
     "commit": "commitlint"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "prettier --write",
+    "*.{md,mdx}": "markdownlint-cli2 --fix"
   }
 }
