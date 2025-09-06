@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/refs/heads/main/schema/markdownlint-cli2-config-schema.json
+
+# Uses @github/markdownlint-github configuration with overrides
+config:
+  # Override: disable fenced-code-language rule
+  extends: "markdownlint/style/prettier"
+  fenced-code-language: false
+  line-length:
+    line_length: 120
+    heading_line_length: 120
+    code_block_line_length: 120
+    code_blocks: true
+    tables: true
+    headings: true
+    strict: false
+    stern: false
+
+# Custom rules from @github/markdownlint-github
+customRules:
+  - "@github/markdownlint-github"
+
+# Output formatting with pretty formatter and appendLink option
+outputFormatters:
+  - - "markdownlint-cli2-formatter-pretty"
+    - appendLink: true

@@ -1,0 +1,21 @@
+{
+  "name": "@wemake.cx/.github",
+  "private": true,
+  "devDependencies": {
+    "@github/markdownlint-github": "^0.8.0",
+    "@types/bun": "latest",
+    "markdownlint": "^0.38.0",
+    "markdownlint-cli2": "^0.18.1",
+    "markdownlint-cli2-formatter-pretty": "^0.0.8",
+    "prettier": "^3.6.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "lint": "bun lint:markdown && bun lint:prettier",
+    "lint:markdown": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\"",
+    "lint:prettier": "prettier --check \"**/*.{md,mdx}\" \"!node_modules\"",
+    "format": "prettier --write . && markdownlint-cli2 --fix \"**/*.{md,mdx}\" \"!node_modules\""
+  }
+}
