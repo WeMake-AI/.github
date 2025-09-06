@@ -2,12 +2,18 @@
   "name": "@wemake.cx/.github",
   "private": true,
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/format": "^19.8.1",
     "@github/markdownlint-github": "^0.8.0",
     "@types/bun": "latest",
+    "husky": "^9.1.7",
     "markdownlint": "^0.38.0",
     "markdownlint-cli2": "^0.18.1",
     "markdownlint-cli2-formatter-pretty": "^0.0.8",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "@commitlint/lint": "^19.8.1",
+    "conventional-changelog-atom": "^5.0.0"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -16,6 +22,8 @@
     "lint": "bun lint:markdown && bun lint:prettier",
     "lint:markdown": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\"",
     "lint:prettier": "prettier --check \"**/*.{md,mdx}\" \"!node_modules\"",
-    "format": "prettier --write . && markdownlint-cli2 --fix \"**/*.{md,mdx}\" \"!node_modules\""
+    "format": "prettier --write . && markdownlint-cli2 --fix \"**/*.{md,mdx}\" \"!node_modules\"",
+    "prepare": "husky",
+    "commit": "commit"
   }
 }
