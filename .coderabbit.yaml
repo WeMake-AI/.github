@@ -1,0 +1,244 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+language: de-DE
+tone_instructions: >
+  Code-Reviewer für WeMakes Knowledge Base. Fokus: Klarheit, WeMake-Werte (Transparenz, Autonomie), Mission-Alignment,
+  Wissensvermittlung, komplexe Konzepte erklären, inklusive Sprache.
+early_access: true
+enable_free_tier: true
+reviews:
+  profile: chill
+  request_changes_workflow: true
+  high_level_summary: true
+  high_level_summary_placeholder: "@coderabbitai summary"
+  high_level_summary_in_walkthrough: true
+  auto_title_placeholder: "@coderabbitai"
+  auto_title_instructions:
+    "Erstelle einen präzisen Titel, der die Kernänderung an der Knowledge Base beschreibt. Fokus auf Wirkung für
+    Nutzer:innen."
+  review_status: true
+  commit_status: true
+  fail_commit_status: false
+  collapse_walkthrough: false
+  changed_files_summary: true
+  sequence_diagrams: false
+  estimate_code_review_effort: true
+  assess_linked_issues: true
+  related_issues: true
+  related_prs: true
+  suggested_labels: true
+  auto_apply_labels: true
+  suggested_reviewers: true
+  auto_assign_reviewers: false
+  poem: false
+  labeling_instructions:
+    - label: Knowledge Base
+      instructions: Änderungen an der internen Knowledge Base (Handbuch, Richtlinien, Prozesse)
+    - label: Onboarding
+      instructions: Verbesserungen für neue Teammitglieder oder externe Beitragende
+    - label: Klarstellung
+      instructions: Präzisierung unklarer Konzepte oder Prozesse
+    - label: Werte & Mission
+      instructions: Änderungen, die WeMakes Kernwerte oder Mission betreffen
+    - label: Transparenz
+      instructions: Verbesserungen der öffentlichen Nachvollziehbarkeit
+    - label: Prozess
+      instructions: Änderungen an Arbeitsabläufen oder Entscheidungsprozessen
+    - label: KI-Strategie
+      instructions: Inhalte zu KI-Tools, -Workflows oder -Richtlinien
+    - label: Documentation
+      instructions: Allgemeine Dokumentationsverbesserungen
+    - label: Bug Fix
+      instructions: Korrektur von Fehlern in Dokumentation oder Konfiguration
+    - label: Chore
+      instructions: Wartungsaufgaben, Konfigurationsänderungen, Abhängigkeiten
+  path_filters: []
+  path_instructions:
+    - path: "profile/handbuch/**"
+      instructions: >
+        Dies ist WeMakes Kern-Handbuch. Achte besonders auf: - Konsistenz mit etablierten WeMake-Werten und -Prinzipien
+        - Klarheit für neue Teammitglieder - Praktische Umsetzbarkeit der beschriebenen Konzepte - Vermeidung von
+        Buzzwords ohne Substanz - Konkrete Beispiele und Handlungsanleitungen
+    - path: "profile/README.md"
+      instructions: >
+        Haupteinstiegspunkt der Knowledge Base. Stelle sicher, dass: - Navigation intuitiv und vollständig ist - Neue
+        Inhalte korrekt verlinkt sind - Struktur logisch und skalierbar bleibt
+    - path: ".trae/rules/**"
+      instructions: >
+        Kritische Projektrichtlinien. Validiere: - Alignment mit WeMakes KI-Strategie - Praktische Umsetzbarkeit für
+        Entwicklungsteams - Klarheit der Sicherheits- und Qualitätsanforderungen
+    - path: "**/*.yaml"
+      instructions: >
+        Konfigurationsdateien müssen gut dokumentiert und wartbar sein. Prüfe auf ausreichende Kommentierung und
+        Verständlichkeit.
+  abort_on_close: true
+  disable_cache: false
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    ignore_title_keywords:
+      - "WIP"
+      - "Draft"
+      - "[skip review]"
+    labels:
+      - "Knowledge Base"
+      - "Documentation"
+    drafts: true
+    base_branches:
+      - main
+    ignore_usernames:
+      - "dependabot[bot]"
+      - "renovate[bot]"
+  finishing_touches:
+    docstrings:
+      enabled: true
+    unit_tests:
+      enabled: false
+  pre_merge_checks:
+    docstrings:
+      mode: warning
+      threshold: 80
+    title:
+      mode: warning
+      requirements: ""
+    description:
+      mode: warning
+    issue_assessment:
+      mode: warning
+  tools:
+    ast-grep:
+      rule_dirs: []
+      util_dirs: []
+      essential_rules: true
+      packages: []
+    shellcheck:
+      enabled: true
+    ruff:
+      enabled: false
+    markdownlint:
+      enabled: true
+    github-checks:
+      enabled: true
+      timeout_ms: 90000
+    languagetool:
+      enabled: true
+      enabled_rules: []
+      disabled_rules: []
+      enabled_categories: []
+      disabled_categories: []
+      enabled_only: false
+      level: default
+    biome:
+      enabled: false
+    hadolint:
+      enabled: false
+    swiftlint:
+      enabled: false
+    phpstan:
+      enabled: false
+      level: default
+    phpmd:
+      enabled: false
+    phpcs:
+      enabled: false
+    golangci-lint:
+      enabled: false
+    yamllint:
+      enabled: true
+    gitleaks:
+      enabled: true
+    checkov:
+      enabled: true
+    detekt:
+      enabled: false
+    eslint:
+      enabled: false
+    flake8:
+      enabled: false
+    rubocop:
+      enabled: false
+    buf:
+      enabled: false
+    regal:
+      enabled: false
+    actionlint:
+      enabled: true
+    pmd:
+      enabled: false
+    cppcheck:
+      enabled: false
+    semgrep:
+      enabled: true
+    circleci:
+      enabled: false
+    clippy:
+      enabled: false
+    sqlfluff:
+      enabled: false
+    prismaLint:
+      enabled: false
+    pylint:
+      enabled: false
+    oxc:
+      enabled: false
+    shopifyThemeCheck:
+      enabled: false
+    luacheck:
+      enabled: false
+    brakeman:
+      enabled: false
+    dotenvLint:
+      enabled: true
+    htmlhint:
+      enabled: false
+    checkmake:
+      enabled: false
+    osvScanner:
+      enabled: true
+chat:
+  art: true
+  auto_reply: true
+  integrations:
+    jira:
+      usage: disabled
+    linear:
+      usage: disabled
+knowledge_base:
+  opt_out: false
+  web_search:
+    enabled: true
+  code_guidelines:
+    enabled: true
+    filePatterns:
+      - ".trae/rules/PROJECT_RULES.md"
+      - "profile/README.md"
+      - "profile/handbuch/*.md"
+  learnings:
+    scope: auto
+  issues:
+    scope: auto
+  jira:
+    usage: disabled
+    project_keys: []
+  linear:
+    usage: disabled
+    team_keys: []
+  pull_requests:
+    scope: auto
+  mcp:
+    usage: auto
+    disabled_servers: []
+code_generation:
+  docstrings:
+    language: de-DE
+    path_instructions:
+      - path: "profile/handbuch/**"
+        instructions: >
+          Erstelle Dokumentation im WeMake-Stil: - Direkt, ehrlich, ohne Marketing-Sprech - Fokus auf praktische
+          Umsetzung - Konkrete Beispiele statt abstrakte Konzepte - Erklärung des "Warum" hinter Entscheidungen
+  unit_tests:
+    path_instructions:
+      - path: "**/*.yaml"
+        instructions: >
+          Erstelle Validierungstests für Konfigurationsdateien: - Syntax-Validierung - Logik-Tests für kritische
+          Einstellungen - Dokumentation der erwarteten Verhaltensweisen
