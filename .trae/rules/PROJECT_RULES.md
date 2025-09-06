@@ -1,32 +1,42 @@
 # Repository Richtlinien
 
-1.  **LLMs verlagern die Arbeitslast, sie eliminieren sie nicht.** Die Annahme, dass Large Language Models Aufgaben vollständig übernehmen, ist eine Fehlinterpretation. Sie transformieren lediglich die Art der benötigten Arbeit.
-2.  **Das Verständnis von Daten bleibt die eigentliche Herausforderung.** Es wurde festgestellt, dass "die größten Kosten für Daten im Verständnis liegen, nicht in der Erfassung". Eine effektive Nutzung erfordert weiterhin tiefgreifendes menschliches Wissen.
-3.  **Teams bleiben auf Vertrauen und einen gemeinsamen Kontext angewiesen.** Kollaborative Arbeit hängt von einem geteilten Verständnis, Alignment und Mentoring ab. Fehlen diese Elemente, besteht das erhöhte Risiko, dass Qualität als gegeben angenommen wird, anstatt sie sicherzustellen.
-4.  **LLMs sind nicht die Universallösung.** Obwohl sie oft als Allheilmittel dargestellt werden, haben sie die Notwendigkeit von klarem Denken, sorgfältiger Überprüfung und durchdachtem Design nicht obsolet gemacht. Es wäre unklug, zu glauben, dass KI diese grundlegenden Anforderungen für Sie gelöst hat.
+1.  **LLMs verlagern die Arbeitslast, sie eliminieren sie nicht.** Die Annahme, dass Large Language Models Aufgaben
+    vollständig übernehmen, ist eine Fehlinterpretation. Sie transformieren lediglich die Art der benötigten Arbeit.
+2.  **Das Verständnis von Daten bleibt die eigentliche Herausforderung.** Es wurde festgestellt, dass "die größten
+    Kosten für Daten im Verständnis liegen, nicht in der Erfassung". Eine effektive Nutzung erfordert weiterhin
+    tiefgreifendes menschliches Wissen.
+3.  **Teams bleiben auf Vertrauen und einen gemeinsamen Kontext angewiesen.** Kollaborative Arbeit hängt von einem
+    geteilten Verständnis, Alignment und Mentoring ab. Fehlen diese Elemente, besteht das erhöhte Risiko, dass Qualität
+    als gegeben angenommen wird, anstatt sie sicherzustellen.
+4.  **LLMs sind nicht die Universallösung.** Obwohl sie oft als Allheilmittel dargestellt werden, haben sie die
+    Notwendigkeit von klarem Denken, sorgfältiger Überprüfung und durchdachtem Design nicht obsolet gemacht. Es wäre
+    unklug, zu glauben, dass KI diese grundlegenden Anforderungen für Sie gelöst hat.
 
-Die Mission von WeMake ist es, nachhaltige Unternehmen durch (menschengeführte) Teams aufzubauen, die ihre Gesundheit nicht für den Erfolg opfern.
+Die Mission von WeMake ist es, nachhaltige Unternehmen durch (menschengeführte) Teams aufzubauen, die ihre Gesundheit
+nicht für den Erfolg opfern.
 
-Deshalb sind wir der Überzeugung, dass Ihre KI-Strategie das Wachstum der Menschen über den Unternehmensprofit stellen sollte.
+Deshalb sind wir der Überzeugung, dass Ihre KI-Strategie das Wachstum der Menschen über den Unternehmensprofit stellen
+sollte.
 
-Nach umfangreicher Forschung und Implementierung haben wir folgende kritische KI-Strategien identifiziert, die unsere Teams für maximale Wirkung ausrichten:
+Nach umfangreicher Forschung und Implementierung haben wir folgende kritische KI-Strategien identifiziert, die unsere
+Teams für maximale Wirkung ausrichten:
 
-*   **Beim Einsatz neuer KI-Tools oder Workflows:**
-    *   Wir testen das erwartete Verhalten und verifizieren das Verständnis, nicht nur die Funktionalität.
-    *   Bei der Validierung von KI-Verhalten entwickeln wir Tests, die ein klares Erfassen der Geschäftslogik und von Grenzfall-Szenarien demonstrieren.
-*   **Menschliche Verifizierung von KI-generierten (MCP) Tools und Schemata ist unerlässlich.**
-    *   Wir stellen eine klare Dokumentation von Tool-Zwecken, Einschränkungen und Sicherheitsauswirkungen sicher.
-    *   Jede unklare oder übermäßig komplexe Implementierung ist zu kennzeichnen.
-*   **Fokus auf Konfigurationsklarheit und Wartbarkeit:**
-    *   Einstellungen müssen gut dokumentiert und verständlich sein.
-*   **Sicherstellung der Verständlichkeit und Wartbarkeit von Daten:**
-    *   Das Verständnis von Daten ist heute oft schwieriger als deren Erstellung.
-    *   Undeutliche Muster oder solche, die erhebliche kognitive Anstrengung erfordern, sind zu markieren.
-    *   Komplexe Logik muss mit ausreichender Erklärung und Kontext versehen werden.
-*   **Betonung der Klarheit operativer Workflows und Debugging-/Fehlerbehebungsfähigkeiten:**
-    *   Schritte müssen gut dokumentiert und Fehler nachvollziehbar sein.
-*   **Wissensvermittlung und gemeinsames Verständnis haben Vorrang vor Kürze:**
-    *   Der Großteil der Dokumentation sollte als effektives Onboarding- und Referenzmaterial für Teammitglieder dienen.
-*   **Das Verhalten von KI-Agenten muss transparent, auditierbar und verständlich sein:**
-    *   Eine klare Dokumentation der Entscheidungsprozesse und Fallback-Mechanismen ist zwingend erforderlich.
-
+- **Beim Einsatz neuer KI-Tools oder Workflows:**
+  - Wir testen das erwartete Verhalten und verifizieren das Verständnis, nicht nur die Funktionalität.
+  - Bei der Validierung von KI-Verhalten entwickeln wir Tests, die ein klares Erfassen der Geschäftslogik und von
+    Grenzfall-Szenarien demonstrieren.
+- **Menschliche Verifizierung von KI-generierten (MCP) Tools und Schemata ist unerlässlich.**
+  - Wir stellen eine klare Dokumentation von Tool-Zwecken, Einschränkungen und Sicherheitsauswirkungen sicher.
+  - Jede unklare oder übermäßig komplexe Implementierung ist zu kennzeichnen.
+- **Fokus auf Konfigurationsklarheit und Wartbarkeit:**
+  - Einstellungen müssen gut dokumentiert und verständlich sein.
+- **Sicherstellung der Verständlichkeit und Wartbarkeit von Daten:**
+  - Das Verständnis von Daten ist heute oft schwieriger als deren Erstellung.
+  - Undeutliche Muster oder solche, die erhebliche kognitive Anstrengung erfordern, sind zu markieren.
+  - Komplexe Logik muss mit ausreichender Erklärung und Kontext versehen werden.
+- **Betonung der Klarheit operativer Workflows und Debugging-/Fehlerbehebungsfähigkeiten:**
+  - Schritte müssen gut dokumentiert und Fehler nachvollziehbar sein.
+- **Wissensvermittlung und gemeinsames Verständnis haben Vorrang vor Kürze:**
+  - Der Großteil der Dokumentation sollte als effektives Onboarding- und Referenzmaterial für Teammitglieder dienen.
+- **Das Verhalten von KI-Agenten muss transparent, auditierbar und verständlich sein:**
+  - Eine klare Dokumentation der Entscheidungsprozesse und Fallback-Mechanismen ist zwingend erforderlich.
