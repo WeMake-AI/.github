@@ -1,0 +1,10 @@
+# Exclude husky hooks (shell scripts)
+.husky/
+
+# Exclude node_modules
+node_modules/
+
+# Exclude lock files
+bun.lock
+package-lock.json
+yarn.lock
