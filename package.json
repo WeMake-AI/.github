@@ -7,6 +7,7 @@
     "@commitlint/format": "^19.8.1",
     "@github/markdownlint-github": "^0.8.0",
     "@types/bun": "latest",
+    "commitlint": "^19.8.1",
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
