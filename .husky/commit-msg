@@ -1,4 +1,4 @@
-#!/usr/bin/env bun
+#!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 set -e
 bunx --no-install commitlint --edit "$1"
