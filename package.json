@@ -23,7 +23,7 @@
     "lint:markdown": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\"",
     "lint:prettier": "prettier --check \"**/*.{md,mdx}\" \"!node_modules\"",
     "format": "prettier --write . && markdownlint-cli2 --fix \"**/*.{md,mdx}\" \"!node_modules\"",
-    "prepare": "husky install",
+    "prepare": "husky",
     "commit": "commitlint"
   },
   "lint-staged": {

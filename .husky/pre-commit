@@ -1,4 +1,2 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
 set -euo pipefail
-npx lint-staged
+bunx lint-staged
