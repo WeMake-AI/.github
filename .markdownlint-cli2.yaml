@@ -14,6 +14,11 @@ config:
     headings: true
     strict: false
     stern: false
+  no-inline-html:
+    allowed_elements:
+      - details
+      - summary
+      - br
 
 # Custom rules from @github/markdownlint-github
 customRules:
