@@ -1,583 +1,595 @@
-# Company Handbuch
+# Company Handbook
 
 Hey! 👋
 
-Dieses Handbuch erklärt simpel, wie wir arbeiten. Es gehört zu den wichtigsten Dingen, die wir je gemacht haben.
+This handbook explains how we work. It is a tool for clarity, not a collection of rules to be memorized.
+
+Translations: [German](/profile/README-de.md)
+
+---
 
 <details>
 
-<summary>1. Warum existiert WeMake?</summary>
+<summary>1. Why WeMake Exists</summary>
 
-## Warum existiert WeMake?
+## Why WeMake Exists
 
-### Unsere Mission
+### Our Mission
 
-Wir transformieren Organisationen durch verantwortungsvolle KI – so, dass Menschen mehr Wirkung entfalten, Arbeit
-sinnvoller wird und Unternehmen schneller lernen. Wir bauen Lösungen, die echte Probleme lösen: operativ, strategisch,
-menschlich. Wir sind German-first in Qualität, Ethik, Sicherheit und Sprache – offen gegenüber der Welt, aber mit einem
-präzisen Verständnis für den hiesigen Kontext.
+We transform organizations with responsible AI. The objective is to enable people to have more impact, make work more
+meaningful, and help companies learn faster. We build solutions for actual problems: operational, strategic, and human.
+Our approach is German-first in quality, ethics, security, and language—globally aware, but with a precise understanding
+of the local context.
 
-#### Ein paar Worte
+#### A Few Axioms
 
-- Arbeit ist eine Praxis. Gute Arbeit braucht Haltung, Handwerk und Systeme.
-- Technologie ist kein Selbstzweck. Sie ist ein Verstärker von Fähigkeiten – gut, wenn die Richtung stimmt, gefährlich,
-  wenn nicht.
-- Verantwortung ist kein Buzzword. Sie ist eine tägliche Entscheidung, sichtbar in Code, Verträgen, Beratung und
-  Support.
-- Wir messen uns an Wirkung: Was ist nach 30, 90, 365 Tagen besser? Für Nutzer:innen, Teams, Kund:innen und die
-  Gesellschaft.
+- **Work is a practice.** Good work requires a principled stance, craftsmanship, and robust systems.
+- **Technology is not an end in itself.** It is an amplifier of intent. Useful if the direction is sound, dangerous if
+  it is not.
+- **Responsibility is not a buzzword.** It is a daily, operational decision, visible in our code, contracts, consulting,
+  and support.
+- **We measure ourselves by impact.** What is demonstrably better after 30, 90, and 365 days? For users, teams, clients,
+  and society.
 
-#### Du kannst mehr als nur eine oder zwei Lösungen erschaffen
+#### You Are Capable of More Than One Solution
 
-Unsere Grundannahme: Menschen sind zu mehr fähig, als typische Rollenbeschreibungen zulassen. Deshalb entwerfen wir
-Arbeit so, dass du mehrere Lösungen erschaffen kannst – nicht nur ein Feature. Dazu gehören:
+Our operating assumption is that people are capable of more than typical job descriptions permit. Consequently, we
+design work to enable you to create multiple solutions, not just single features. This includes:
 
-- breite Ownership (Problem → Lösung → Betrieb → Lernen),
-- Zugriff auf die „Infrastruktur des Könnens“ (Clarity, V41),
-- Coaching, Dokumentation und Feedback-Loops,
-- klare, öffentlich nachvollziehbare Entscheidungen (PRs, RFCs, Architektur-Entscheidungs-Records),
-- Tools, die aus dem Weg gehen statt Arbeit zu verkomplizieren.
+- Broad ownership (Problem → Solution → Operation → Learning).
+- Access to our "infrastructure of competence" (Clarity, V41).
+- Coaching, documentation, and feedback loops.
+- Clear, publicly traceable decisions (PRs, RFCs, Architecture Decision Records).
+- Tools that get out of the way instead of complicating work.
 
-### Unsere Strategie
+### Our Strategy
 
-#### 1. Quelle der Wahrheit für Kunden- und KI-Lösungen sein
+#### 1. Be the Source of Truth for Client and AI Solutions
 
-- Wir verbinden strategische Beratung mit ausführbarer Technologie.
-- Clarity ist unsere organisatorische Intelligenzschicht, V41 die multimodale Grundlage.
-- Unser Consulting ist nicht vom Produkt getrennt – es operationalisiert Mission, Ethik und Architektur.
+- We connect strategic consulting with executable technology.
+- Clarity is our organizational intelligence layer; V41 is the multimodal foundation.
+- Our consulting is not separate from the product—it operationalizes our mission, ethics, and architecture.
 
-#### 2. Jede benötigte Lösung anbieten, um Unternehmen beim Wachstum zu helfen
+#### 2. Offer Every Solution Needed to Help Companies Grow
 
-- Wir bauen, kuratieren und orchestrieren Lösungen entlang echter Wertströme: Vertrieb, Operationen, Support,
-  Compliance, Produkt, People.
-- Unsere Toolbox (Clarity/V41) ermöglicht spezifische, wiederholbare Lösungen – industrienahe, aber nicht
-  kundenspezifisch verhärtet.
+- We build, curate, and orchestrate solutions along real value streams: sales, operations, support, compliance, product,
+  people.
+- Our toolbox (Clarity/V41) enables specific, repeatable solutions—industry-aligned but not hardened into bespoke dead
+  ends.
 
-#### 3. Als Erste am Start sein
+#### 3. Be First to Learn
 
-- Time-to-Learn vor Time-to-Launch. Wir priorisieren schnelle, valide Lernzyklen über „perfekte“ Roadmaps.
-- Standardmäßig bauen wir iterativ in der Öffentlichkeit: Changelog, Demo-Umgebungen, offene Doks, öffentliche
-  Diskussionen.
+- We prioritize Time-to-Learn over Time-to-Launch. We favor rapid, valid learning cycles over "perfect" roadmaps.
+- Our default is to build iteratively in public: changelogs, demo environments, open docs, public discussions.
 
-### Geheimer Masterplan
+### The "Secret" Master Plan
 
-Geheim ist hier nur die Ironie. Der Plan ist öffentlich:
+The only secret here is the irony. The plan is public.
 
-- Heute (Ist): Beratung, Orchestration und Umsetzung mit Clarity/V41; produktive Implementierungen; transparente
-  Richtlinien.
-- Nächste 12–24 Monate (Zielbild): mehr Self-Serve, smartere Automations-Patterns, intensivere Readiness-Checks,
-  breitere Library wiederverwendbarer Lösungen; Ausbau unserer deutschen Sprach- und Kulturkompetenz in Modellen.
-- Langfristig: WeMake als Referenz für verantwortungsvolle, wirksame KI im deutschsprachigen Raum; Infrastruktur statt
-  Einzelprojekt.
+- **Today (Current State):** Consulting, orchestration, and implementation with Clarity/V41; productive deployments;
+  transparent guidelines.
+- **Next 12–24 Months (Target State):** More self-serve capabilities, smarter automation patterns, intensive readiness
+  checks, a broader library of reusable solutions; expansion of our German language and cultural competence in models.
+- **Long-Term:** WeMake as the reference for responsible, effective AI in the German-speaking world; an infrastructure
+  provider, not a project shop.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>2. Wie wir hierher gekommen sind</summary>
+<summary>2. How We Got Here</summary>
 
-## Wie wir hierher gekommen sind
+## How We Got Here
 
-Dinge, die uns beeinflusst haben
+Influences that have shaped our thinking.
 
-### Bücher (Typus, nicht Checkliste)
+### Books (As a Type, Not a Checklist)
 
-- Systems Thinking, antifragile Organisationen, Ethik in der Technik, Menschen in komplexen Systemen.
-- Praktiken: RFCs, Design Docs, Postmortems, operatives Lernen, Entscheidungsjournal.
-- Haltung: Klarheit, Mut, Konsequenz.
+- Systems thinking, antifragile organizations, ethics in technology, humans in complex systems.
+- Practices: RFCs, Design Docs, Postmortems, operational learning, decision journals.
+- Stance: Clarity, courage, consequence.
 
-### Andere Unternehmen (als Lernfelder)
+### Other Companies (As Learning Environments)
 
-- Open-Source-Communities (Governance, Reviews, Contribution-Kultur).
-- Sicherheits- und Cloud-Pioniere (Zero Trust, Resilienz, Automatisierung).
-- Produktteams, die Dokumentation wie ein Produkt behandeln.
+- Open-source communities (governance, reviews, contribution culture).
+- Security and cloud pioneers (Zero Trust, resilience, automation).
+- Product teams that treat documentation as a product.
 
-### Handbuch (als Werkzeug)
+### This Handbook (As a Tool)
 
-- Dieses Handbuch ist lebendig. Wir committen es. Wir versionieren es. Wir reviewen es.
-- Es existiert nicht, um recht zu haben, sondern um besser zu werden.
-- Wenn Realität und Handbuch divergieren, gewinnt die Realität – und wir passen das Handbuch an.
+- This handbook is alive. We commit to it. We version it. We review it.
+- It exists not to be right, but to become better.
+- If reality and the handbook diverge, reality wins—and we update the handbook.
 
-### Analogien, die uns prägen (kurz und ehrlich)
+### Defining Analogies (Brief and Honest)
 
-- Open Source → Unser Arbeitsmodell: öffentlich, nachvollziehbar, Beiträge willkommen.
-- Stadtinfrastruktur → Unsere Plattformstrategie: Clarity/V41 sind Straßen, Strom, Wasser; auf ihnen entstehen Produkte.
-- Gym, nicht Spa → Unsere Kultur: Du trainierst Verantwortung und Fähigkeiten; Komfort ist ein Nebenprodukt, kein Ziel.
+- **Open Source → Our Operating Model:** Public, traceable, contributions welcome.
+- **Urban Infrastructure → Our Platform Strategy:** Clarity/V41 are the roads, power, and water. Products are built upon
+  them.
+- **A Gym, Not a Spa → Our Culture:** You are here to train your capacity for responsibility and skill. Comfort is a
+  byproduct, not the goal.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>3. Wie wir Nutzer:innen gewinnen  </summary>
+<summary>3. How We Acquire Users</summary>
 
-## Wie wir Nutzer:innen gewinnen
+## How We Acquire Users
 
-### Warum wir so sind, wie wir sind
+### Why We Are the Way We Are
 
-- Wir lösen echte Probleme – keine hypothetischen.
-- Wir sprechen die Sprache unserer Nutzer:innen (wörtlich: Deutsch; fachlich: die Sprache der Domäne).
-- Vertrauen ist unsere Währung: Transparenz, Sicherheit, Klarheit in Erwartungen.
+- We solve real problems, not hypothetical ones.
+- We speak our users' language (literally: German; professionally: the language of their domain).
+- Trust is our currency, earned through transparency, security, and clear expectations.
 
-### Für uns bedeutet Marketing, nützliche Inhalte zu erstellen
+### For Us, Marketing Is Creating Useful Things
 
-- Inhalte sind unser Marketing. Von Deep-Dives bis zu Praxisguides.
-- Kein „Hype as a Service“. Wir erklären, wie Dinge funktionieren – und wie nicht.
-- Wir teilen: Benchmarks, Metriken, Trade-offs, Entscheidungen und ihre Kosten.
+- Content is our marketing. From deep dives to practical guides.
+- We do not offer "Hype as a Service." We explain how things work—and how they fail.
+- We share what we learn: benchmarks, metrics, trade-offs, decisions, and their costs.
 
-### Wir investieren gerne viel in unsere Website
+### We Invest Heavily in Our Website
 
-- Die Website ist ein Produkt. Sie ist die erste Erfahrung mit WeMake.
-- Sie ermöglicht Self-Serve: Demos, Docs, Sandboxen, direkte Buchungen – möglichst ohne Sales-Termin.
-- Sie ist schnell, barrierearm, suchbar, verständlich, aktualisiert.
-- Sie sagt, was wir tun – und was nicht.
+- The website is a product. It is the first experience of WeMake.
+- It enables self-service: demos, docs, sandboxes, direct sign-ups—ideally without a sales call.
+- It is fast, accessible, searchable, understandable, and current.
+- It states what we do and, just as importantly, what we do not do.
 
-### Wir machen es dir extrem leicht, WeMake-Lösungen zu kaufen
+### We Make It Extremely Easy to Buy WeMake Solutions
 
-- Freemium/Trials, klare Nutzungsmodelle, einfache Verträge.
-- Abkürzungen statt Hürden: Direktkauf, Pilot, Pay-as-you-go.
-- Keine versteckten Gebühren; Preise werden erklärt, nicht verschleiert.
+- Freemium/trials, clear usage models, simple contracts.
+- Shortcuts, not hurdles: direct purchase, pilots, pay-as-you-go.
+- No hidden fees. Pricing is explained, not obfuscated.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>4. Für wen wir entwickeln</summary>
+<summary>4. Who We Build For</summary>
 
-## Für wen wir entwickeln
+## Who We Build For
 
-### Unser aktuelles ICP (Ideales Kundenprofil)
+### Our Current ICP (Ideal Customer Profile)
 
-- Organisationen im DACH-Raum mit klarem Anspruch an Qualität, Sicherheit, Ethik.
-- Teams, die bereit sind, mit KI operativ zu arbeiten (nicht nur zu diskutieren).
-- Domänen mit Regulierung: Gesundheit, Finanz, Industrie, öffentliche Hand, Bildung – dort, wo Sorgfalt Pflicht ist.
-- Menschen, die Gleichheit, Empowerment und Sinnhaftigkeit ernst meinen – und die Konsequenzen tragen wollen (Ownership,
-  Lernkurven, Feedback).
+- Organizations in the DACH region with high standards for quality, security, and ethics.
+- Teams prepared to work with AI operationally, not just discuss it.
+- Regulated domains: healthcare, finance, industry, public sector, education—where diligence is mandatory.
+- People who take equality, empowerment, and purpose seriously and are willing to accept the consequences (ownership,
+  learning curves, feedback).
 
-### Häufig gestellte Fragen (FAQ)
+### Frequently Asked Questions (FAQ)
 
-#### An wen sollten wir beim Kreieren besonders denken?
+#### Who should we think about most when creating?
 
-- An die eigentlichen Praktiker:innen: die Person, die den Prozess betreibt, die den Fehler ausbaden muss, die wirklich
-  Zeit spart oder verliert.
-- An Führungskräfte mit Verantwortung für Wirkung, nicht nur Zahlen.
-- An Kolleg:innen, die später onboarden – Dokumentation als Willkommenspaket.
+- The practitioner: the person who runs the process, who deals with the error, who actually saves or loses time.
+- Leaders responsible for impact, not just spreadsheets.
+- Colleagues who will join later. Documentation is a welcome package.
 
-#### Was ist ein:e Kunde:in mit hohem Potenzial und warum ist das wichtig?
+#### What is a high-potential customer and why does it matter?
 
-- Hohes Potenzial = klare Pain Points, Datenzugang, operative Bereitschaft, Sponsor mit Ownership.
-- Wichtig, weil wir Ergebnisse wollen: schnelle Lernzyklen, wiederholbare Muster, skalierbare Lösungen.
+- **High-potential:** Clear pain points, data access, operational readiness, a sponsor with ownership.
+- **Why it matters:** We want results. This means fast learning cycles, repeatable patterns, and scalable solutions.
 
-#### Was ist ein Hobbyist und warum ist das wichtig?
+#### What is a hobbyist and why does it matter?
 
-- Hobbyist:in = experimentiert, aber ohne echte Anwendung/Verbindlichkeit.
-- Wichtig, um freundlich zu sein, aber fokussiert zu bleiben: Wir helfen gern, doch wir priorisieren Wirkung.
+- **Hobbyist:** Someone who experiments without a real-world application or commitment.
+- **Why it matters:** We are helpful but focused. We assist where we can, but we prioritize impact.
 
-#### Warum das KI-Team?
+#### Why the AI team?
 
-- Weil Umsetzung zählt: Daten, Prozesse, Sicherheit, Governance, Integration.
-- Das KI-Team sorgt für wiederholbare Qualität, nicht für bunte Demos.
+- Because execution matters: data, processes, security, governance, integration.
+- The AI team ensures repeatable quality, not just colorful demos.
 
-#### Was ist mit Marketing?
+#### What about marketing?
 
-- Marketing ist Teil des Produkts: Inhalte, Demos, Dokumentation, Community.
-- Ziel: Verstehen ermöglichen und Hürden senken.
-- Sales ist Beratung, nicht Druck.
+- Marketing is part of the product: content, demos, documentation, community.
+- Its goal is to enable understanding and lower barriers.
+- Sales is consulting, not pressure.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>5. Wie wir Nutzer:innen glücklich machen</summary>
+<summary>5. How We Make Users Happy</summary>
 
-## Wie wir Nutzer:innen glücklich machen
+## How We Make Users Happy
 
-### Lösungen schaffen, die Menschen wirklich wollen
+The term "happy" is imprecise. We aim for "effective," "capable," and "confident." Happiness is a potential outcome.
 
-- Wir starten bei den Aufgaben, nicht bei den Features.
-- Wir messen Wirkung: Zeitersparnis, Fehlerreduktion, Qualität, Zufriedenheit.
-- Wir bauen klein und lernen schnell: Proof → Pilot → Produktion.
-- Wir dokumentieren, was wir lernen – öffentlich, wenn möglich.
+### Creating Solutions People Actually Want
 
-### Expert:innen sprechen mit Nutzer:innen und bieten Support
+- We start with the job-to-be-done, not the feature list.
+- We measure impact: time saved, error reduction, quality improvements, user satisfaction.
+- We build small and learn fast: Proof → Pilot → Production.
+- We document what we learn—publicly, when possible.
 
-- Keine Support-Warteschlange mit Skript. Du sprichst mit den Menschen, die es gebaut haben.
-- Review/Support-Calls sind kurz, konkret, lösungsorientiert; async-first; nachvollziehbar dokumentiert.
-- Wir sind ehrlich über Trade-offs – und helfen dir, die richtige Entscheidung zu treffen.
+### Experts Talk to Users and Provide Support
 
-</details><br/>
+- There is no scripted support queue. You speak with the people who built the solution.
+- Review and support calls are short, specific, and solution-oriented. We are async-first and document everything for
+  traceability.
+- We are honest about trade-offs and help you make the right decision for your context.
 
+</details>
+<br/>
 <details>
 
-<summary>6. Wie wir Geld verdienen</summary>
+<summary>6. How We Make Money</summary>
 
-## Wie wir Geld verdienen
+## How We Make Money
 
-### Unser Vertriebsansatz basiert auf der besten Erfahrung für unser ideales Kundenprofil
+### Our Sales Approach Is Based on the Best Experience for Our ICP
 
-- Self-Serve und Low-Touch, wo möglich. High-Touch nur, wo notwendig.
-- Inhalte, Demos, Readiness-Checks senken Akquisekosten und erhöhen Passung.
-- Wir verkaufen keine Luftschlösser – unsere Lösungen sind nutzbar, nicht nur vorzeigbar.
+- Self-serve and low-touch where possible. High-touch only where necessary.
+- Content, demos, and readiness checks lower acquisition costs and increase customer fit.
+- We do not sell hypotheticals. Our solutions are usable, not just presentable.
 
-### Preise sollten kein Hindernis sein
+### Price Should Not Be an Obstacle
 
-- Transparente Modelle, Einstieg ohne Kapitalblocker.
-- Wir stellen Nutzen vor Margenmaximierung – nachhaltig, nicht naiv.
-- Wir investieren in Effizienz und Automatisierung, um Preise dauerhaft niedrig zu halten.
+- Transparent models. Low-friction entry points.
+- We prioritize utility over margin maximization. This is sustainable, not naive.
+- We invest in efficiency and automation to keep prices low over the long term.
 
-### Abrechnung nach tatsächlicher Nutzung und volle Kontrolle für Nutzer:innen
+### Billing Based on Actual Usage with Full User Control
 
-- Pay-as-you-go, Caps, Limits, Alarmierungen: du kontrollierst deine Kosten.
-- Exportierbarkeit von Daten und Metriken ist kein Premium-Feature.
-- Kündigen ist so leicht wie Buchen.
+- Pay-as-you-go, caps, limits, and alerts. You control your costs.
+- Data and metric exportability is a standard feature, not a premium one.
+- Canceling is as easy as signing up.
 
-### Die günstigste Option für jede einzelne Lösung sein
+### Be the Most Economical Option for Any Given Solution
 
-- Wir optimieren auf TCO (Total Cost of Ownership): Implementierung, Betrieb, Risiken.
-- Wenn Open-Source günstiger und gut genug ist, empfehlen wir es – selbst wenn es uns kurzfristig Umsatz kostet.
-- Wir verdienen Vertrauen, bevor wir Umsatz maximieren.
+- We optimize for Total Cost of Ownership (TCO), which includes implementation, operation, and risk.
+- If an open-source alternative is cheaper and sufficient, we will recommend it—even at the cost of short-term revenue.
+- We earn trust before we maximize revenue.
 
-### Prinzipien für den Umgang mit Großkund:innen (Enterprise)
+### Principles for Enterprise Engagements
 
-- Es ist okay, Deals zu verlieren. Wir bleiben Prinzipien treu.
-- Wir sagen vertraglich keine spezifischen Liefergegenstände zu; wir liefern Ergebnisse entlang definierter Ziele und
-  Messgrößen.
-- Wir entwickeln Dinge, wenn wir überzeugt sind, dass sie mehr als eine Organisation nutzen kann.
-- Kund:innen müssen Lösungen ausprobieren, bevor sie Änderungen erwarten können – Lernen schlägt Hypothesen.
-- Produktmanagement/CSM ist nicht Standard – aber als leichtgewichtiges, temporäres Werkzeug okay, wenn Skalierung,
-  Koordination oder Compliance es erfordern.
-- Sicherheit und Ethik sind nicht verhandelbar.
+- It is acceptable to lose deals if it means adhering to our principles.
+- We do not commit to specific deliverables in contracts; we commit to outcomes against defined goals and metrics.
+- We build things when we are convinced they can be used by more than one organization.
+- Clients must try solutions before requesting changes. Learning beats hypothesizing.
+- Product Management/CSM is not a default role, but a lightweight, temporary tool we deploy when scale, coordination, or
+  compliance requires it.
+- Security and ethics are non-negotiable.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>7. Dauerhaft niedrige Preise</summary>
+<summary>7. Sustaining Low Prices</summary>
 
-## Dauerhaft niedrige Preise
+## Sustaining Low Prices
 
-### Wir können mehrere Produkte an dieselben Personen verkaufen
+### We Can Sell Multiple Products to the Same People
 
-- Ein Problem selten allein; wer ein Problem löst, hat meist ein zweites – wir liefern modular und integrierbar.
-- Cross-Solution-Design spart Implementierungskosten.
+- Problems rarely exist in isolation. A customer with one solved problem often has another. We deliver modular,
+  integrable solutions.
+- Cross-solution design saves implementation costs.
 
-### Kein Vertrieb notwendig
+### No Traditional Sales Team Required
 
-- Dokumentation, Demos, Sandboxen, Online-Buchung – wir senken Hürden, damit du selbst entscheiden kannst.
-- Vertrieb ist Beratung, nicht Druck.
+- Documentation, demos, sandboxes, and online purchasing lower the barriers to entry, allowing you to decide for
+  yourself.
+- Sales is a consultative function, not a persuasive one.
 
-### Mehrere Lösungen, ein Datensatz
+### Multiple Solutions, One Data Plane
 
-- Clarity als Orchestrator, V41 als Kern – einheitliche Identitäten, Metriken, Governance.
-- Weniger Integration, weniger Brüche, weniger Kosten.
+- Clarity as the orchestrator, V41 as the core. This provides unified identities, metrics, and governance.
+- Less integration, fewer data silos, lower costs.
 
-### Ein technisches Publikum, das Dokumentation statt technischen Support benötigt
+### A Technical Audience That Needs Documentation, Not Technical Support
 
-- Wir schreiben Doks, die wirklich helfen: How-tos, Playbooks, Architekturen, Entscheidungsleitfäden.
-- Wir investieren in Beispiele, SDKs, Templates, statt Tickets zu züchten.
+- We write docs that are actually helpful: how-tos, playbooks, architectural diagrams, decision guides.
+- We invest in examples, SDKs, and templates to prevent support tickets.
 
-### Nutzung von Open-Source-Technologie
+### Use of Open-Source Technology
 
-- Wir nutzen, was gut ist – und geben zurück, wo wir können.
-- Open Source ist auch ein Governance-Modell: öffentlich, reviewbar, forkbar.
+- We use what is effective and contribute back where we can.
+- Open source is also a governance model: public, reviewable, forkable.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>8. Entscheidung über neue Lösungen</summary>
+<summary>8. Deciding on New Solutions</summary>
 
-## Entscheidung über neue Lösungen
+## Deciding on New Solutions
 
-### Wie wir Features innerhalb bestehender Lösungen auswählen
+### How We Select Features Within Existing Solutions
 
-- Leitfrage: Wessen Problem lösen wir – und wie schnell lernen wir?
-- Kriterien: Nutzen, Wiederverwendbarkeit, Sicherheit, Komplexität, Pflegeaufwand, Dokumentierbarkeit.
-- Formate: RFCs, Architekturentscheidungen, kleine Experimente, öffentliche Changelogs.
+- **Guiding Question:** Whose problem are we solving, and how quickly can we learn from it?
+- **Criteria:** Utility, reusability, security, complexity, maintenance load, documentability.
+- **Formats:** RFCs, Architecture Decision Records, small experiments, public changelogs.
 
-### Wie wir neue Lösungen auswählen
+### How We Select New Solutions
 
-- Wir wählen dann neu, wenn ein Problem nicht sinnvoll in bestehende Lösungen integrierbar ist – oder wenn ein neues
-  Fähigkeitsbündel entsteht.
-- Wir vermeiden Produktfriedhöfe: klarer Owner, klare Metriken, klare Exit-Kriterien.
-- Wir schreiben vor dem Bauen die Doks, die wir später brauchen (Install, Runbook, Troubleshooting, Security, Ethics,
-  Metrics).
+- We create a new solution when a problem cannot be logically integrated into an existing one, or when a new bundle of
+  capabilities emerges.
+- We avoid creating a product graveyard. Every solution has a clear owner, clear metrics, and clear exit criteria.
+- Before we build, we write the documentation we will need later: installation, runbooks, troubleshooting, security,
+  ethics, metrics.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>9. Ein breites Unternehmen mit kleinen Teams</summary>
+<summary>9. A Broad Company with Small Teams</summary>
 
-## Ein breites Unternehmen mit kleinen Teams
+## A Broad Company with Small Teams
 
-### Geschwindigkeit
+### Speed
 
-- Geschwindigkeit = kurze Batch-Größen + klare Verantwortungen + öffentlich nachvollziehbare Entscheidungen.
-- Wir optimieren nicht auf Auslastung, sondern auf Durchsatz und Lerngeschwindigkeit.
+- Speed is a function of small batch sizes, clear responsibilities, and publicly traceable decisions.
+- We optimize for throughput and learning velocity, not for resource utilization.
 
-### Kleine Teams
+### Small Teams
 
-- Kleine, autonome Zellen mit End-to-End-Verantwortung.
-- Teams haben alles, was sie brauchen, oder sie bauen es – wir reduzieren Abhängigkeiten.
+- Small, autonomous cells with end-to-end responsibility.
+- Teams have what they need or they build it. We minimize dependencies.
 
-### Minimale Hierarchie
+### Minimal Hierarchy
 
-- Führung ist eine Tätigkeit, kein Rangabzeichen.
-- Wir führen über Klarheit, nicht über Kontrolle.
+- Leadership is an activity, not a rank.
+- We lead through clarity, not control.
 
-### Titel basierend auf deiner tatsächlichen Tätigkeit
+### Titles Based on Your Actual Work
 
-- Nenn dich so, wie du wirkst. Titel spiegeln Output, nicht Wunsch.
-- Karrierewege sind Pfade des Könnens, nicht Treppen aus Karotten.
+- Your title should reflect your output, not your aspiration.
+- Career paths are built on expanding competence, not climbing a ladder.
 
-### Zielsetzung
+### Goal Setting
 
-- Wir nutzen klare, messbare Ziele mit Feedback-Loops.
-- „Ship small, learn big“: kleine Releases, große Lerneffekte.
+- We use clear, measurable goals with tight feedback loops.
+- "Ship small, learn big": small releases, large learning effects.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>10. Wie wir ein erstklassiges Team aufbauen</summary>
+<summary>10. How We Build a World-Class Team</summary>
 
-## Wie wir ein erstklassiges Team aufbauen
+## How We Build a World-Class Team
 
-Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
+Personality traits that correlate with success at WeMake.
 
-### Echte Gestalter:innen
+### Genuine Builders
 
-- Du willst Dinge in die Welt bringen. Du kannst abstrahieren und bauen.
-- Du baust Systeme, die andere besser machen.
+- You want to bring things into the world. You can abstract and execute.
+- You build systems that make others better.
 
-### Unkomplizierte Zusammenarbeit
+### Low-Friction Collaboration
 
-- Du kommunizierst klar, freundlich, präzise.
-- Du arbeitest async und respektierst Fokuszeiten.
+- You communicate clearly, kindly, and precisely.
+- You work asynchronously and respect focus time.
 
-### Bereitschaft, den gemeinsamen Weg zu gehen
+### Willingness to Go the Distance Together
 
-- Erfolg ist Teamleistung. Du teilst Kredit und lernst aus Fehlern.
-- Du gehst Konflikte an – früh, offen, lösungsorientiert.
+- Success is a team outcome. You share credit and learn from failures.
+- You address conflict early, openly, and with a focus on resolution.
 
-### Treiber:innen, nicht Mitfahrer:innen
+### Drivers, Not Passengers
 
-- Du wartest nicht auf Erlaubnis; du holst dir Kontext und legst los.
-- Du verantwortest Wirkung.
+- You do not wait for permission; you acquire context and begin.
+- You are responsible for impact.
 
-### Gute Gründe, bei uns anzufangen
+### Good Reasons to Join Us
 
-- Du willst an der vordersten Linie arbeiten: Ethik, Sicherheit, Wirksamkeit.
-- Du willst remote, eigenverantwortlich, mit klarem Impact arbeiten.
-- Du willst lernen, dokumentieren, teilen – und andere mitziehen.
+- You want to work on the front lines of applied AI ethics, security, and efficacy.
+- You want to work remotely, autonomously, and with clear impact.
+- You want to learn, document, share, and elevate others.
 
-### Warum du nicht zu uns kommen solltest
+### Reasons You Should Not Join Us
 
-- Wenn du Komfort über Verantwortung stellst.
-- Wenn dir Transparenz unangenehm ist.
-- Wenn du lieber verwaltet wirst als zu führen.
+- If you value comfort over responsibility.
+- If transparency makes you uncomfortable.
+- If you prefer to be managed rather than to lead.
 
-### Eine kleine Gruppe starker Menschen und Vergütung
+### A Small Group of Strong People and Compensation
 
-- Wenige, starke Menschen schlagen große, durchschnittliche Teams.
-- Vergütung ist fair, transparent, kompetitiv – mit Ownership-Optionen, wenn sinnvoll.
-- Wir vergüten Wirkung, nicht Präsenz.
+- A few strong people outperform large, average teams.
+- Compensation is fair, transparent, and competitive, with ownership options where appropriate.
+- We compensate for impact, not presence.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>11. Was wir wertschätzen</summary>
+<summary>11. What We Value</summary>
 
-## Was wir wertschätzen
+## What We Value
 
-### Du steuerst selbst
+### You Are the Driver
 
-- Kontext > Kontrolle. Wir geben Richtung, du findest den besten Weg.
-- Wir erwarten, dass du Entscheidungen triffst – und sie öffentlich erklärst.
+- Context > Control. We provide direction; you find the best path.
+- We expect you to make decisions and explain them publicly.
 
-### Mach es öffentlich
+### Make It Public
 
-- Public by default: PRs, Issues, Docs, Roadmaps – alles, was nicht vertraulich sein muss.
-- Öffentlichkeit ist ein Qualitätsfilter und ein Lehrmeister.
+- Public by default: PRs, issues, docs, roadmaps—everything that does not need to be confidential.
+- Public exposure is a quality filter and a teacher.
 
-### Mehr Mut zum Ungewöhnlichen
+### More Courage for the Unconventional
 
-- Konventionen sind bequem; Fortschritt ist unbequem.
-- Wir suchen dort, wo andere nicht hinschauen – und wir erklären, was wir finden.
+- Convention is comfortable; progress is not.
+- We look where others do not, and we explain what we find.
 
-### Warum nicht jetzt?
+### Why Not Now?
 
-- Heute ist besser als demnächst. Klein anfangen, groß lernen.
-- Risiken klar benennen, nicht vermeiden.
+- Today is better than "soon." Start small, learn big.
+- Name risks clearly; do not avoid them.
 
-### Grundsätzlich optimistisch
+### Fundamentally Optimistic
 
-- Wir sind Realist:innen mit Blick nach vorne.
-- Probleme sind Einladungen zu Systemdesign.
+- We are realists with a forward-looking bias.
+- Problems are invitations to design better systems.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>12. Ein erstklassiges Arbeitsumfeld schaffen</summary>
+<summary>12. Creating a World-Class Work Environment</summary>
 
-## Ein erstklassiges Arbeitsumfeld schaffen
+## Creating a World-Class Work Environment
 
-### Standardmäßig kein Produktmanagement
+### No Product Management by Default
 
-- Unsere Default-Einstellung: Engineers, Researchers, Designer:innen sprechen direkt mit Nutzer:innen.
-- Produktmanagement/CSM aktivieren wir leichtgewichtig, temporär, dort wo Enterprise-Kontext, Koordination oder
-  Compliance dies erfordern.
-- Ziel: Weniger Übersetzungsschichten, mehr geteiltes Verständnis, schnellere Lernschleifen.
+- Our default state: Engineers, Researchers, and Designers speak directly with users.
+- We activate Product Management/CSM as a lightweight, temporary function where enterprise context, coordination, or
+  compliance demands it.
+- The goal: Fewer layers of translation, more shared understanding, faster learning loops.
 
-### Transparenz ist der Treibstoff für Autonomie
+### Transparency Fuels Autonomy
 
-- Jede Entscheidung hat einen PR, ein Issue oder ein ADR.
-- Protokolle, Postmortems, Metriken sind Standard.
-- Sicherheit und Ethik sind mitdokumentiert.
+- Every significant decision has a corresponding PR, issue, or ADR.
+- Minutes, postmortems, and metrics are standard practice.
+- Security and ethics are documented alongside functionality.
 
-### Es beginnt mit der Einstellung
+### It Starts with Hiring
 
-- Wir stellen Menschen ein, die Verantwortung wollen und können.
-- Wir prüfen Fähigkeiten, Haltung, Lernfähigkeit; wir coachen, wir testen in der Praxis.
+- We hire people who want and can handle responsibility.
+- We assess skills, stance, and ability to learn. We coach and test in practice.
 
-### Ein hoher Anteil unseres Teams sind Tech-Talente aller Geschlechter
+### A High Percentage of Our Team Are Technical Talent of All Genders
 
-- Technologie ist unser Medium, Vielfalt unser Verstärker.
-- Wir achten auf Sprache, Chancen, Räume – damit Kompetenz sichtbar wird.
+- Technology is our medium; diversity is our amplifier.
+- We are mindful of language, opportunities, and spaces to ensure competence is visible.
 
-### Konzentriertes Arbeiten
+### Deep Work
 
-- Async-first, tiefe Fokuszeiten, wenige Meetings.
-- Kommunikation ist schriftlich, prägnant, respektvoll.
-- Slack ist für Koordination; Entscheidungen stehen in PRs/Issues.
+- Async-first, protected focus time, few meetings.
+- Communication is written, concise, and respectful.
+- Slack is for coordination; decisions live in PRs and issues.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>13. Nicht das Geld ausgehen lassen</summary>
+<summary>13. Not Running Out of Money</summary>
 
-## Nicht das Geld ausgehen lassen
+## Not Running Out of Money
 
-### Ruhe bewahren und auf Überleben ausgerichtet sein
+### Maintain Composure and Orient Toward Survival
 
-- Wir priorisieren Runway und Wirkung vor Wachstum um jeden Preis.
-- Wir betreiben Szenarien und Frühwarnsysteme.
+- We prioritize runway and impact over growth at all costs.
+- We run scenarios and maintain early warning systems.
 
-### Prinzipien zur Kapitalbeschaffung
+### Principles for Raising Capital
 
-- Kapital ist ein Werkzeug, kein Ziel.
-- Wir nehmen Geld nur zu Bedingungen, die unsere Prinzipien schützen.
-- Transparenz gegenüber Team und Community hat Priorität.
+- Capital is a tool, not a goal.
+- We only accept funding on terms that protect our principles.
+- Transparency with the team and community is a priority.
 
-### Wie wir es ausgeben
+### How We Spend It
 
-- In Infrastruktur, die viele Lösungen ermöglicht (Clarity, V41).
-- In Menschen, die Systeme bauen, nicht nur Tickets bearbeiten.
-- In Inhalte, die nutzen – Doks, Playbooks, Forschung, Benchmarks.
+- On infrastructure that enables many solutions (Clarity, V41).
+- On people who build systems, not just close tickets.
+- On content that provides utility: docs, playbooks, research, benchmarks.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>14. Wohin geht die Reise?</summary>
+<summary>14. Where We Are Going</summary>
 
-## Wohin geht die Reise?
+## Where We Are Going
 
-### Wird WeMake verkauft werden?
+### Will WeMake Be Sold?
 
-- Wir bauen auf Eigenständigkeit. Verkauf ist kein Ziel, sondern ein mögliches Ereignis – falls es Mission und Menschen
-  stärkt.
-- Sekundärverkäufe sind uns lieber als vollständige Übernahmen.
+- We are building for independence. A sale is not a goal, but a possible event—if it strengthens the mission and its
+  people.
+- We prefer secondary sales to full acquisitions.
 
-### 1 Mio. € bis 2027
+### €1M ARR by 2027
 
-- Konkretes, messbares Ziel – nicht nur Umsatz, sondern wiederkehrender Wert und Wirkung.
-- Wir veröffentlichen Kennzahlen, die die Reise zeigen (ohne Vertrauliches zu teilen).
+- A specific, measurable goal. This represents recurring value and impact, not just revenue.
+- We will publish key metrics that illustrate the journey (without sharing confidential information).
 
-### Sekundärverkäufe statt kompletter Übernahme
+### Secondary Sales Over a Full Acquisition
 
-- Mitarbeiter:innen sollen partizipieren können, ohne Kultur oder Mission zu verkaufen.
-- Wir bevorzugen Optionen, die Stabilität sichern und Wachstum ermöglichen.
+- Employees should have the opportunity to realize value without selling the culture or mission.
+- We prefer options that secure stability while enabling growth.
 
-</details><br/>
-
+</details>
+<br/>
 <details>
 
-<summary>15. Wie du helfen kannst</summary>
+<summary>15. How You Can Help</summary>
 
-## Wie du helfen kannst
+## How You Can Help
 
-### Dich schnell einarbeiten
+### Onboard Quickly
 
-- Lies dieses Handbuch und unsere Kern-Dokumente.
-- Starte mit einem kleinen, nützlichen Beitrag: eine Doku-Stelle verbessern, ein kleines Script, ein Test, ein Pattern.
+- Read this handbook and our core documents.
+- Start with a small, useful contribution: improve a piece of documentation, write a small script, add a test, define a
+  pattern.
 
-### Um Hilfe bitten, aber erst nachdem du es selbst versucht hast
+### Ask for Help, But Only After You Have Tried
 
-- Zeig deinen Versuch: Was du getan hast, was du beobachtet hast, was nicht funktioniert hat.
-- Frag spezifisch, damit wir gezielt helfen können.
+- Show your work: what you did, what you observed, what failed.
+- Ask specific questions so we can provide specific help.
 
-### Keine Perfektion erwarten
+### Do Not Expect Perfection
 
-- „Perfekt“ ist oft langsam und fragil. „Klar + funktionsfähig + dokumentiert“ ist unser Sweet Spot.
-- Fehler sind okay; verschweigen nicht.
+- "Perfect" is often slow and fragile. "Clear, functional, and documented" is our target state.
+- Mistakes are acceptable; hiding them is not.
 
-### Es besser machen
+### Make It Better
 
-- Hinterlasse alles ein Stück klarer, einfacher, sicherer als du es vorgefunden hast.
-- Schreibe die Doku, die du dir gewünscht hättest.
+- Leave everything a bit clearer, simpler, and more secure than you found it.
+- Write the documentation you wish you had when you started.
 
-### Nicht auf andere warten
+### Don't Wait for Others
 
-- Ownership heißt handeln. Hole Kontext, entscheide, dokumentiere, iteriere.
-- Wenn du blockiert bist, sag es früh.
+- Ownership means taking action. Get context, decide, document, iterate.
+- If you are blocked, state it early.
 
-### Eine Meinung haben
+### Have an Opinion
 
-- Sag, was du denkst – begründet, respektvoll, mit Bereitschaft, besser zu werden.
-- Änderst du deine Meinung, dokumentiere warum.
+- Say what you think—reasoned, respectful, and with a willingness to be wrong.
+- If you change your mind, document why.
 
-### Um die Ecke denken
+### Think Around Corners
 
-- Such das dritte, vierte, fünfte Lösungsmuster.
-- Kombiniere Bestehendes neu – Clarity AI ist dafür gemacht.
+- Look for the third, fourth, and fifth solution patterns.
+- Combine existing components in new ways. Clarity AI is designed for this.
 
-### Keine Issues an Personen zuweisen
+### Don't Assign Issues to People
 
-- Wir arbeiten teamorientiert. Issues beschreiben Probleme; Teams committen zu Lösungen.
-- Verantwortungen sind klar, aber nicht personifiziert im Tracking.
+- We work in teams. Issues describe problems; teams commit to solutions.
+- Responsibilities are clear but not personified in the tracking system.
 
-### Nicht einfach mergen ohne Review
+### Don't Merge Without a Review
 
-- Mindestens ein Review – für Code, Dokus, Entscheidungen.
-- Review heißt Verantwortung teilen, nicht Bürokratie.
+- A minimum of one review for code, docs, and decisions.
+- A review is about sharing responsibility, not bureaucracy.
 
 ### PRs > Issues > Slack
 
-- Entscheidungen und änderbare Vorschläge gehören in PRs.
-- Ideen und Probleme in Issues.
-- Slack für Koordination und Menschliches.
-- Wenn’s wichtig ist, steht es nicht nur in Slack.
+- Decisions and changeable proposals belong in Pull Requests.
+- Ideas and problems belong in Issues.
+- Slack is for coordination and human connection.
+- If it is important, it does not live only in Slack.
 
-### Dinge standardmäßig so öffentlich wie möglich machen
+### Make Things Public by Default
 
-- Öffentlichkeit ist Default, Vertraulichkeit ist begründet.
-- Schreibe für zukünftige Leser:innen – kurz, klar, mit Links.
+- Public is the default; confidential requires justification.
+- Write for a future reader: be brief, clear, and provide links.
 
-### Proaktiv bei Community-Fragen sein
+### Be Proactive with Community Questions
 
-- Antworte hilfreich, freundlich, ehrlich.
-- Wenn du’s nicht weißt: Sag es und finde es heraus.
+- Answer in a way that is helpful, friendly, and honest.
+- If you don't know the answer, say so, and then find it.
 
-### Und wenn du nicht hier arbeitest
+### And If You Don't Work Here
 
-- Dieses Handbuch darfst du lesen, zitieren, kritisieren.
-- Wenn du denkst, etwas fehlt oder falsch ist: Eröffne ein Issue. Wir danken dir.
+- You are free to read, cite, and critique this handbook.
+- If you believe something is missing or incorrect, open an issue. We would be grateful.
 
-</details><br/>
+</details>
+<br/>
 
-Hinweise zu internen Referenzen und Quellen: Wo sinnvoll, verlinken wir auf weiterführende, interne Dokumente. Diese
-sind öffentlich einsehbar, solange sie keine vertraulichen Inhalte enthalten.
+---
+
+Internal references and sources are linked where appropriate. These documents are publicly accessible unless they
+contain confidential information.
