@@ -1,120 +1,144 @@
-# WeMake AI Ethics Policy
+# WeMake Verhaltenskodex
 
-## Our Mission-Driven Pledge
+## Warum dieser Text existiert
 
-As WeMake AI, we are committed to advancing artificial intelligence for enterprise excellence while fostering an
-inclusive, innovative, and ethically-driven community. We pledge to make participation in our AI-first development
-ecosystem a harassment-free, collaborative experience for everyone, regardless of age, body size, visible or invisible
-disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education,
-socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+Wir bauen KI-Systeme. Wir tun das mit Menschen. Menschen sind kompliziert – manchmal brilliant, manchmal anstrengend,
+meistens beides gleichzeitig. Deshalb brauchen wir Regeln.
 
-We are dedicated to building AI systems that respect human dignity, promote enterprise innovation, and contribute to a
-sustainable digital future. Our commitment extends to GDPR compliance, ethical AI development, and responsible
-technology stewardship in the German and European enterprise markets.
+Diese Regeln sollen sicherstellen, dass niemand belästigt, ausgeschlossen oder kleingemacht wird – unabhängig von Alter,
+Körper, Behinderung (sichtbar oder nicht), Herkunft, Geschlecht, Identität, Erfahrung, Bildung, sozialem Status,
+Nationalität, Aussehen, Religion oder sexueller Orientierung.
 
-## Core Principles for AI-First Development
+Wir entwickeln KI-Systeme, die menschliche Würde respektieren, Unternehmen besser machen und zu einer nachhaltigen
+digitalen Zukunft beitragen. Wir halten uns an die DSGVO, entwickeln Technologie verantwortungsvoll und nehmen den
+europäischen Markt ernst – nicht nur als Regulierungsraum, sondern als Werteraum.
 
-- **Ethical AI Leadership**: We develop AI systems that augment human capabilities while maintaining human agency,
-  dignity, and decision-making authority. Our AI solutions prioritize transparency, explainability, and accountability.
+---
 
-- **Enterprise Excellence**: We deliver production-ready, scalable solutions that meet the highest standards of German
-  and European enterprise requirements, including GDPR compliance, data sovereignty, and regulatory adherence.
+## Grundprinzipien
 
-- **Inclusive Innovation**: We foster diverse perspectives in AI development, ensuring our solutions serve all users
-  equitably and address potential biases in algorithms, data, and deployment strategies.
+### Ethische KI-Entwicklung
 
-- **Collaborative Intelligence**: We believe in Human-AI collaboration where AI agents enhance human productivity while
-  preserving human oversight, creativity, and ethical judgment in critical decisions.
+Wir bauen Systeme, die Menschen verstärken – nicht ersetzen. KI soll Entscheidungen unterstützen, nicht übernehmen.
+Transparenz, Erklärbarkeit und Verantwortlichkeit sind keine Buzzwords, sondern Architekturanforderungen.
 
-- **Sustainable Technology**: We develop efficient, resource-conscious AI systems that minimize environmental impact
-  while maximizing business value and societal benefit.
+### Enterprise-Qualität
 
-- **Security by Design**: We implement enterprise-grade security patterns, privacy protection, and data governance from
-  the ground up, ensuring robust protection against emerging threats.
+Unsere Lösungen sind produktionsreif, skalierbar und erfüllen deutsche und europäische Standards: DSGVO,
+Datensouveränität, Regulierung. Wir liefern nicht nur Demos, sondern Systeme, die laufen.
 
-## Community Standards & Enforcement
+### Inklusive Innovation
 
-### Expected Behavior
+Vielfalt ist kein PR-Thema, sondern ein Qualitätsmerkmal. Unterschiedliche Perspektiven reduzieren Bias in Algorithmen,
+Daten und Deployment-Strategien. Wir bauen für alle, nicht nur für die Lautesten.
 
-- **Professional Excellence**: Maintain high standards of technical and professional conduct in all AI development
-  activities
-- **Constructive Collaboration**: Engage in respectful, solution-oriented discussions that advance our AI-first mission
-- **Ethical AI Advocacy**: Promote responsible AI development practices and challenge unethical applications
-- **Inclusive Participation**: Welcome diverse perspectives and ensure equitable access to learning and contribution
-  opportunities
-- **Enterprise Integrity**: Uphold the highest standards of business ethics, data protection, and regulatory compliance
+### Kollaborative Intelligenz
 
-### Unacceptable Behavior
+Mensch-KI-Zusammenarbeit bedeutet: KI macht Menschen produktiver, aber Menschen behalten Kontrolle, Kreativität und
+ethisches Urteilsvermögen. Besonders bei kritischen Entscheidungen.
 
-- Harassment, discrimination, or exclusionary behavior of any kind
-- Unethical AI development practices or promotion of harmful AI applications
-- Violation of data privacy, GDPR requirements, or enterprise security standards
-- Deliberate misinformation about AI capabilities, limitations, or risks
-- Disrespectful or unprofessional conduct in community spaces
+### Nachhaltige Technologie
 
-### Scope
+Wir entwickeln effiziente, ressourcenschonende Systeme. Rechenleistung kostet Energie; Energie kostet Klima. Wir
+minimieren Impact, während wir Wert maximieren.
 
-These rules of conduct apply to all project and community spaces (repository, issues, PRs, discussions, chat, events) as
-well as when people officially represent the project.
+### Security by Design
 
-### Enforcement Responsibilities
+Sicherheit, Datenschutz und Governance sind keine Nachgedanken, sondern Grundlagen. Wir implementieren
+Enterprise-Security von Anfang an – weil Nachbessern teuer ist und Vertrauen nur einmal verspielt wird.
 
-Community maintainers (and Compliance/HR if applicable) are responsible for clarification, moderation and action. In the
-event of a conflict of interest, delegation is made to an uninvolved person.
+---
 
-### Enforcement Guidelines
+## Was funktioniert
 
-- Correction: Notice and expectation of correction
-- Warning: Warning for violations without malicious intent
-- Temporary Ban: Temporary exclusion for repeated/serious violations
-- Permanent Ban: Exclusion for continued or serious violations
+- **Professionalität**: Hohe technische und menschliche Standards in allem, was wir tun.
+- **Konstruktive Zusammenarbeit**: Respektvolle, lösungsorientierte Diskussionen, die uns weiterbringen.
+- **Ethik-Advocacy**: Verantwortungsvolle KI-Entwicklung fördern, fragwürdige Anwendungen hinterfragen.
+- **Inklusive Teilhabe**: Diverse Perspektiven willkommen heißen, Zugang zu Lernen und Beitragen sicherstellen.
+- **Enterprise-Integrität**: Höchste Standards bei Geschäftsethik, Datenschutz, Compliance.
 
-#### Timelines & Acknowledgement
+---
 
-- Acknowledgement: within 72 hours of receipt
-- Initial assessment: within 7 days (severity, next steps)
-- Completion/intermediate status: every 30 days until resolution
+## Was nicht funktioniert
 
-#### Appeals
+- Belästigung, Diskriminierung, Ausgrenzung jeder Art.
+- Unethische KI-Praktiken oder Förderung schädlicher Anwendungen.
+- Verletzung von Datenschutz, DSGVO oder Sicherheitsstandards.
+- Bewusste Fehlinformation über KI-Fähigkeiten, Grenzen oder Risiken.
+- Respektloses oder unprofessionelles Verhalten in Community-Räumen.
 
-Affected parties can appeal against decisions. The appeal is reviewed by an uninvolved person (or a separate body). The
-results and reasons are documented and communicated to the person concerned.
+---
 
-#### Record-Keeping
+## Geltungsbereich
 
-Measures and decisions are documented in compliance with data protection regulations and stored in an audit-proof manner
-(minimization, storage limitation, access only on a need-to-know basis).
+Diese Regeln gelten für alle Projekt- und Community-Räume: Repository, Issues, PRs, Diskussionen, Chat, Events. Auch
+wenn du WeMake offiziell repräsentierst, gelten sie.
 
-### Reporting and Resolution
+---
 
-Instances of unacceptable behavior may be reported to our community leaders at
-[conduct@wemake.cx](mailto:conduct@wemake.cx). All reports will be reviewed promptly, fairly, and confidentially. We are
-committed to protecting the privacy and security of all reporters.
+## Durchsetzung
 
-Our enforcement approach prioritizes education, mediation, and community healing while maintaining firm boundaries
-against harmful behavior.
+### Zuständigkeiten
 
-#### Data Protection for Reports (GDPR)
+Community-Maintainer (und ggf. Compliance/HR) klären, moderieren, handeln. Bei Interessenkonflikten wird an unbeteiligte
+Personen delegiert.
 
-- Purpose: Processing and documentation of reports pursuant to Art. 6 para. 1 lit. f GDPR
-- Data: Contact details, descriptions, metadata; storage only as long as necessary
-- Rights: information, rectification, erasure, restriction, objection
-- Data Protection Officer (DPO): [privacy@wemake.cx](mailto:privacy@wemake.cx)
+### Maßnahmen
 
-## Our Commitment to Responsible AI
+- **Korrektur**: Hinweis und Erwartung, dass du es besser machst.
+- **Verwarnung**: Warnung bei Verstößen ohne böse Absicht.
+- **Temporäre Sperre**: Zeitweiliger Ausschluss bei wiederholten oder schweren Verstößen.
+- **Permanente Sperre**: Ausschluss bei anhaltenden oder gravierenden Verstößen.
 
-WeMake AI is dedicated to developing artificial intelligence that serves humanity's best interests while driving
-enterprise innovation. We prioritize:
+### Fristen
 
-- **Human-Centered AI**: Technology that augments rather than replaces human capabilities
-- **Environmental Responsibility**: Efficient AI systems that minimize computational waste and environmental impact
-- **Sustainable Business Practices**: Long-term value creation over short-term profits
-- **Community Benefit**: AI solutions that contribute to societal well-being and economic prosperity
+- **Bestätigung**: innerhalb von 72 Stunden nach Eingang.
+- **Erste Bewertung**: innerhalb von 7 Tagen (Schweregrad, nächste Schritte).
+- **Abschluss/Zwischenstand**: alle 30 Tage bis zur Klärung.
 
-## Living Document
+### Einspruch
 
-This Code of Conduct evolves with our community and the rapidly advancing field of artificial intelligence. We welcome
-feedback, suggestions, and contributions from our community to help us maintain the highest standards of ethical AI
-development.
+Betroffene können Einspruch einlegen. Eine unbeteiligte Person (oder Gremium) prüft. Ergebnisse und Begründungen werden
+dokumentiert und kommuniziert.
 
-For questions, suggestions, or to report concerns, please contact us at [conduct@wemake.cx](mailto:conduct@wemake.cx).
+### Dokumentation
+
+Maßnahmen und Entscheidungen werden DSGVO-konform dokumentiert und revisionssicher gespeichert: Datenminimierung,
+Speicherbegrenzung, Zugriff nur bei Bedarf.
+
+---
+
+## Meldung
+
+Verstöße können an [security@wemake.cx](mailto:security@wemake.cx) gemeldet werden. Alle Meldungen werden zeitnah, fair
+und vertraulich geprüft. Wir schützen die Privatsphäre und Sicherheit aller Meldenden.
+
+Unser Ansatz: Bildung, Mediation, Community-Heilung – aber klare Grenzen gegen schädliches Verhalten.
+
+### Datenschutz bei Meldungen (DSGVO)
+
+- **Zweck**: Verarbeitung und Dokumentation von Meldungen gemäß Art. 6 Abs. 1 lit. f DSGVO.
+- **Daten**: Kontaktdaten, Beschreibungen, Metadaten; Speicherung nur so lange wie nötig.
+- **Rechte**: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.
+- **Datenschutzbeauftragte:r (DSB)**: [privacy@wemake.cx](mailto:privacy@wemake.cx)
+
+---
+
+## Unsere Verpflichtung
+
+WeMake entwickelt KI, die den Interessen der Menschen dient – und gleichzeitig Unternehmen voranbringt. Wir
+priorisieren:
+
+- **Human-Centered AI**: Technologie, die Menschen verstärkt, nicht ersetzt.
+- **Umweltverantwortung**: Effiziente Systeme, die Rechenaufwand und Umweltbelastung minimieren.
+- **Nachhaltige Geschäftspraktiken**: Langfristiger Wert vor kurzfristigen Gewinnen.
+- **Gemeinwohl**: KI-Lösungen, die gesellschaftliches Wohlergehen und wirtschaftlichen Wohlstand fördern.
+
+---
+
+## Lebendes Dokument
+
+Dieser Kodex entwickelt sich mit unserer Community und dem Feld der KI weiter. Feedback, Vorschläge und Beiträge sind
+willkommen.
+
+Fragen, Anregungen oder Meldungen: [security@wemake.cx](mailto:security@wemake.cx)
