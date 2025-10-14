@@ -3,8 +3,9 @@
 ## Enterprise Security Standards
 
 WeMake maintains enterprise-grade security standards for all Model Context Protocol (MCP) server implementations, AI
-agent integrations, and Cloudflare Workers deployments. Our security framework is designed to meet German and European
-regulatory requirements, including GDPR, NIS2, and emerging AI governance standards.
+agent integrations including Clarity BI (meetclarity.de / clarity.bi), and Cloudflare Workers deployments. Our security
+framework is designed to meet German and European regulatory requirements, including GDPR, NIS2, and emerging AI
+governance standards.
 
 ## Supported Versions
 
@@ -13,7 +14,7 @@ We are finalizing our formal support policy. Interim commitment:
 - Supported versions: latest two minor releases of 1.x (rolling window)
 - Security updates: Critical/High for supported versions
 - EOL: 90 days after the next minor release
-- Full policy will be published by Q4 2025. Tracking: <https://github.com/wemake-ai/mcp/issues/32>
+- Full policy will be published by end of 2025. Tracking: <https://github.com/wemake-ai/mcp/issues/32>
 
 This Security Policy was last updated in August 2025 and applies to data subjects in the European Economic Area and
 Switzerland.
@@ -24,15 +25,19 @@ Switzerland.
 
 - **Authentication & Authorization**: Multi-layered access controls with role-based permissions for MCP server
   interactions
-- **Data Validation**: Strict input/output validation for all MCP tool calls and responses
+- **Data Validation**: Strict input/output validation for all MCP tool calls and responses, including email content and
+  document processing
 - **Code Understanding & Review**: Prioritize security through comprehensive code review processes, as understanding
   code is more critical than generating it. Implement mandatory human review for AI-generated security-sensitive code
 - **SAST/DAST/SCA**: Static/dynamic analyses and dependency audits mandatory in CI
 - **SBOM**: Signed SBOMs (e.g. SPDX/CycloneDX) for MCP servers and AI agents
 - **Test Coverage Gate**: ≥90% (branches/lines) as a merge requirement for security-relevant components
-- **Sandboxing**: Isolated execution environments for AI agent operations
+- **Sandboxing**: Isolated execution environments for AI agent operations, including secure email and document
+  processing
 - **Audit Logging**: Comprehensive logging of all AI interactions for compliance and security monitoring
 - **Rate Limiting**: Advanced throttling mechanisms to prevent abuse and ensure service availability
+- **Content Security**: File type validation, malware scanning, and secure attachment processing for email and document
+  inputs
 
 ### Cloudflare Workers Security
 
@@ -45,15 +50,17 @@ Switzerland.
 
 ### GDPR & Data Protection
 
-- **Data Minimization**: Collecting only necessary data for AI operations
+- **Data Minimization**: Collecting only necessary data for AI operations, including email and document processing
 - **Purpose Limitation**: Using data solely for specified, legitimate purposes
-- **Storage Limitation**: Automatic data retention and deletion policies
+- **Storage Limitation**: Automated data retention and deletion policies with tiered storage approaches
 - **Data Subject Rights**: Comprehensive support for access, rectification, and erasure requests
 - **Privacy by Design**: Built-in privacy protections in all AI systems
 - **Cross-Border Transfers**: Compliant data transfer mechanisms for global operations
 - **Data Portability/Restriction/Objection**: Support for Art. 20/18/21 GDPR requests
 - **DPIA**: Data Protection Impact Assessments for high-risk processing (Art. 35 GDPR)
 - **RoPA**: Records of Processing Activities maintained (Art. 30 GDPR)
+- **User Data Export and Deletion**: Secure export capabilities and automated deletion for user data and processed
+  content
 - **How to submit DSRs**: [privacy@wemake.cx](mailto:privacy@wemake.cx) or DSR portal:
   [https://wemake.cx/privacy/requests](https://wemake.cx/privacy/requests)
 
@@ -126,10 +133,11 @@ MCP server operations:
 #### Data Protection & Encryption
 
 - **Encryption at Rest & In Transit**: AES-256 encryption for data at rest; TLS 1.2+/1.3 with strong cipher suites
-  (AES-GCM-256 or ChaCha20-Poly1305) for data in transit
+  (AES-GCM-256 or ChaCha20-Poly1305) for data in transit, including email content and document processing
 - **Key Management**: Hardware Security Modules (HSMs) for cryptographic key protection
 - **Pseudonymization/Anonymization**: Pseudonymization by default; anonymization where feasible for AI training data
 - **Data Masking**: Dynamic data masking for development and testing environments
+- **Content Processing Security**: End-to-end encryption for email and document content during processing and storage
 
 #### AI System Security
 
@@ -184,11 +192,11 @@ August 2025_
 
 ## Contact & Support
 
-For security-related inquiries, vulnerability reports, or compliance questions:
+For security-related inquiries, vulnerability reports, or compliance questions regarding all WeMake products including
+Clarity BI:
 
 - **Security Team**: [security@wemake.cx](mailto:security@wemake.cx)
-- **Compliance Officer**: [florentin@wemake.cx](mailto:florentin@wemake.cx)
 - **Emergency Hotline**: Available 24/7 for critical security incidents
 
 WeMake is committed to maintaining the highest standards of security and privacy in all our AI development and
-deployment activities.
+deployment activities, including email and document processing systems.
