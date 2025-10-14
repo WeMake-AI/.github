@@ -1,0 +1,214 @@
+name: Entscheidungs-Record
+description: Dokumentation einer getroffenen Entscheidung
+title: "Entscheidung: [Entscheidungstitel] - [Status: accepted/rejected/deprecated]"
+labels: ["decision", "decision-record"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Entscheidungs-Record
+
+        Verwende diese Vorlage zur Dokumentation von getroffenen Entscheidungen. Sie hilft dabei, Entscheidungen nachvollziehbar zu machen und Learnings zu sammeln.
+
+  - type: input
+    id: decision-id
+    attributes:
+      label: Entscheidungs-ID
+      description: Eindeutige ID für diese Entscheidung (z.B. DEC-001)
+      placeholder: DEC-001
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: Aktueller Status dieser Entscheidung
+      options:
+        - accepted - Entscheidung getroffen und wird umgesetzt
+        - rejected - Entscheidung wurde abgelehnt
+        - deprecated - Entscheidung wurde durch neuere ersetzt
+        - superseded - Entscheidung wurde aufgehoben
+        - proposed - Noch in Diskussion (für Entwürfe)
+    validations:
+      required: true
+
+  - type: input
+    id: original-proposal
+    attributes:
+      label: Originaler Vorschlag
+      description: Link zum ursprünglichen Entscheidungsvorschlag (falls vorhanden)
+      placeholder: https://github.com/wemake-ai/.github/issues/123
+
+  - type: textarea
+    id: final-decision
+    attributes:
+      label: Finale Entscheidung
+      description: Was wurde entschieden? Sei klar und präzise.
+      placeholder: |
+        Wir implementieren Option 2 (Partner-Integration) für die E-Mail-Verarbeitungs-Verbesserung.
+        Begründung: Beste Balance zwischen Geschwindigkeit und Ressourcenaufwand.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Warum wurde diese Entscheidung getroffen? Begründe basierend auf den ursprünglichen Kriterien.
+      placeholder: |
+        **Technische Gründe:**
+        - Partner-Lösung ist bereits erprobt und skalierbar
+        - Integration kann in 2-3 Wochen erfolgen vs. 6-8 Wochen Eigenentwicklung
+
+        **Business-Gründe:**
+        - Kund:innen brauchen schnellere Lösung
+        - Ressourcen für andere Prioritäten verfügbar halten
+
+        **Risiko-Gründe:**
+        - Geringeres technisches Risiko als Eigenbau
+        - Bewährte Partner-Beziehung bereits vorhanden
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-plan
+    attributes:
+      label: Umsetzungsplan
+      description: Wie wird die Entscheidung umgesetzt?
+      placeholder: |
+        **Phase 1: Vorbereitung (Woche 1)**
+        - Technische Spezifikation erstellen
+        - Partner-Verträge prüfen
+        - Test-Environment aufsetzen
+
+        **Phase 2: Entwicklung (Woche 2-3)**
+        - Integration implementieren
+        - Grundlegende Tests durchführen
+        - Performance-Tests
+
+        **Phase 3: Testing & Rollout (Woche 4)**
+        - Kund:innen-Pilot mit 5 Nutzer:innen
+        - Feedback sammeln und Anpassungen
+        - Vollständiger Rollout
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Erfolgsmetriken & KPIs
+      description: Wie messen wir den Erfolg dieser Entscheidung?
+      placeholder: |
+        **Primäre Metriken:**
+        - E-Mail-Verarbeitungszeit: < 10 Sekunden Ziel (aktuell: 45 Sekunden)
+        - System-Performance: Keine Degradation anderer Features
+
+        **Sekundäre Metriken:**
+        - Kund:innen-Zufriedenheit: > 4.5/5 Sterne
+        - Feature-Adoption: > 70% der aktiven Nutzer:innen
+
+  - type: textarea
+    id: learning-goals
+    attributes:
+      label: Lern-Ziele
+      description: Was wollen wir durch diese Entscheidung lernen?
+      placeholder: |
+        - Wie gut funktionieren Partner-Integrationen für Core-Features?
+        - Welche Performance-Verbesserungen sind für Kund:innen am wichtigsten?
+        - Wie können wir ähnliche Integrationen in Zukunft schneller durchführen?
+
+  - type: textarea
+    id: review-checkpoints
+    attributes:
+      label: Review-Checkpoints
+      description: Wann überprüfen wir den Erfolg und sammeln Learnings?
+      placeholder: |
+        **30-Tage-Review:** 2025-02-15
+        - Erste Performance-Metriken
+        - Kund:innen-Feedback aus Pilot-Phase
+
+        **90-Tage-Review:** 2025-04-15
+        - Vollständige Nutzungsdaten
+        - Business-Impact-Analyse
+
+        **365-Tage-Review:** 2026-01-15
+        - Langfristige Auswirkungen
+        - Lessons Learned für ähnliche Entscheidungen
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternativen betrachtet
+      description: Welche anderen Optionen wurden evaluiert und warum abgelehnt?
+      placeholder: |
+        **Option 1: Eigenbau-Lösung**
+        Abgelehnt wegen: Zu hoher Zeitaufwand (6-8 Wochen vs. 2-3 Wochen für Integration)
+
+        **Option 3: Open-Source-Adaptierung**
+        Abgelehnt wegen: Technische Schulden und ungewisser Maintenance-Aufwand
+
+  - type: textarea
+    id: risks-identified
+    attributes:
+      label: Identifizierte Risiken
+      description: Welche Risiken wurden identifiziert und wie werden sie gemanagt?
+      placeholder: |
+        **Technisches Risiko:** Partner-API könnte sich ändern
+        **Mitigation:** Klare SLA-Vereinbarungen, regelmäßige API-Tests
+
+        **Business-Risiko:** Integration könnte teurer werden als geplant
+        **Mitigation:** Kosten-Cap in Vertrag, schrittweise Implementierung
+
+  - type: textarea
+    id: stakeholder-communication
+    attributes:
+      label: Stakeholder-Kommunikation
+      description: Wer wurde informiert und wie?
+      placeholder: |
+        **Entscheidungs-Owner:** @username - Direkte Verantwortung
+        **Betroffene Teams:** Produkt und Operations per Slack informiert
+        **Leadership:** CEO per E-Mail über strategische Auswirkungen informiert
+        **Kund:innen:** Bei Rollout über Newsletter informiert
+
+  - type: textarea
+    id: next-actions
+    attributes:
+      label: Nächste Schritte
+      description: Was passiert als nächstes?
+      placeholder: |
+        - Technische Spezifikation erstellen (@assignee, bis: YYYY-MM-DD)
+        - Partner-Verträge finalisieren (@assignee, bis: YYYY-MM-DD)
+        - Erstes Review-Meeting planen (@assignee, bis: YYYY-MM-DD)
+
+  - type: textarea
+    id: related-issues-prs
+    attributes:
+      label: Verwandte Issues/PRs
+      description: Links zu verwandten GitHub Issues oder Pull Requests
+      placeholder: |
+        - #123 - Originaler Feature-Request
+        - #124 - Technische Spezifikation
+        - PR #125 - Erste Implementierung
+
+  - type: checkboxes
+    id: alignment-checklist
+    attributes:
+      label: Alignment-Checkliste
+      description: Stelle sicher, dass diese Entscheidung mit WeMake-Prinzipien übereinstimmt
+      options:
+        - Entspricht Company Handbuch Prinzipien
+        - Fördert Transparenz und Lernen
+        - Trägt zu nachhaltiger KI-Entwicklung bei
+        - Unterstützt unsere Mission und Werte
+        - Berücksichtigt DSGVO und Sicherheitsstandards
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Weiterführende Informationen
+
+        - [Entscheidungsrahmen](/docs/DECISION_FRAMEWORK.md) - Vollständige Dokumentation
+        - [Entscheidungsmatrix](/docs/decision-matrix.md) - Für zukünftige Entscheidungen
+        - [ADRs](/docs/decisions/) - Architekturell bedeutsame Entscheidungen
+
+        **Hinweis:** Dieser Record wird als Referenz für zukünftige Entscheidungen und Reviews verwendet.

@@ -1,0 +1,397 @@
+name: Decision Tracking
+
+on:
+  issues:
+    types: [opened, labeled, unlabeled, closed]
+  schedule:
+    # Monthly metrics report on the 1st of each month
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Reason for manual trigger"
+        required: false
+        default: "Manual execution"
+
+jobs:
+  label-decisions:
+    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'decision')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-label decision issues
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const labels = context.payload.issue.labels.map(l => l.name);
+
+            // Helper function to add label if not present
+            async function addLabelIfNotPresent(label) {
+              if (!labels.includes(label)) {
+                await github.rest.issues.addLabels({
+                  issue_number: issueNumber,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  labels: [label]
+                });
+              }
+            }
+
+            // Auto-label based on decision content
+            const body = context.payload.issue.body || '';
+
+            if (body.includes('Type 1') || body.includes('One-way door') || body.includes('strategic')) {
+              await addLabelIfNotPresent('decision:type-1');
+            }
+
+            if (body.includes('Type 2') || body.includes('Two-way door') || body.includes('experimental')) {
+              await addLabelIfNotPresent('decision:type-2');
+            }
+
+            if (body.includes('Produkt') || body.includes('Strategie') || body.includes('Partnerschaften')) {
+              await addLabelIfNotPresent('decision:strategic');
+            }
+
+            if (body.includes('Feature') || body.includes('operativ') || body.includes('Prozess')) {
+              await addLabelIfNotPresent('decision:operational');
+            }
+
+            if (body.includes('Team') || body.includes('Kultur') || body.includes('People')) {
+              await addLabelIfNotPresent('decision:people-culture');
+            }
+
+  decision-review-reminders:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for overdue decision reviews
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const now = new Date();
+            const thirtyDaysAgo = new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
+            const sixtyDaysAgo = new Date(now.getTime() - (60 * 24 * 60 * 60 * 1000));
+            const ninetyDaysAgo = new Date(now.getTime() - (90 * 24 * 60 * 60 * 1000));
+
+            // Search for decision issues with review checkpoints
+            const query = `
+              query($owner: String!, $repo: String!, $thirtyDaysAgo: DateTime!) {
+                repository(owner: $owner, name: $repo) {
+                  issues(first: 100, labels: ["decision"], states: OPEN, filterBy: { since: $thirtyDaysAgo }) {
+                    nodes {
+                      number
+                      title
+                      body
+                      labels(first: 10) {
+                        nodes {
+                          name
+                        }
+                      }
+                      assignees(first: 5) {
+                        nodes {
+                          login
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+
+            const variables = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              thirtyDaysAgo: thirtyDaysAgo.toISOString()
+            };
+
+            const result = await github.graphql(query, variables);
+            const issues = result.repository.issues.nodes;
+
+            let reminders = [];
+
+            for (const issue of issues) {
+              const body = issue.body || '';
+              const assignees = issue.assignees.nodes.map(a => a.login);
+
+              // Check for 30-day review mentions
+              if (body.includes('30-Tage-Review') || body.includes('30-Tage-Checkpoint')) {
+                if (body.includes('30 Tage') && !body.includes('Review durchgeführt')) {
+                  reminders.push({
+                    issue: issue.number,
+                    type: '30-day-review',
+                    title: issue.title,
+                    assignees: assignees
+                  });
+                }
+              }
+
+              // Check for 60-day review mentions
+              if (body.includes('60-Tage-Review')) {
+                if (body.includes('60 Tage') && !body.includes('Review durchgeführt')) {
+                  reminders.push({
+                    issue: issue.number,
+                    type: '60-day-review',
+                    title: issue.title,
+                    assignees: assignees
+                  });
+                }
+              }
+
+              // Check for 90-day review mentions
+              if (body.includes('90-Tage-Review')) {
+                if (body.includes('90 Tage') && !body.includes('Review durchgeführt')) {
+                  reminders.push({
+                    issue: issue.number,
+                    type: '90-day-review',
+                    title: issue.title,
+                    assignees: assignees
+                  });
+                }
+              }
+            }
+
+            // Create reminder comments for overdue reviews
+            for (const reminder of reminders) {
+              const commentBody = `🤖 **Decision Review Reminder**\n\n` +
+                `**Issue:** #${reminder.issue}\n` +
+                `**Title:** ${reminder.title}\n` +
+                `**Review Type:** ${reminder.type}\n\n` +
+                `Dieser Review-Checkpoint könnte überfällig sein. Bitte prüft den Status dieser Entscheidung.\n\n` +
+                `Assignees: ${reminder.assignees.map(a => `@${a}`).join(', ')}\n\n` +
+                `Falls der Review bereits stattgefunden hat, bitte das Issue entsprechend aktualisieren.`;
+
+              await github.rest.issues.createComment({
+                issue_number: reminder.issue,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: commentBody
+              });
+            }
+
+            console.log(`Created ${reminders.length} review reminders`);
+
+  stale-decision-detection:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find stale decision proposals
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fourteenDaysAgo = new Date(Date.now() - (14 * 24 * 60 * 60 * 1000));
+
+            const query = `
+              query($owner: String!, $repo: String!, $fourteenDaysAgo: DateTime!) {
+                repository(owner: $owner, name: $repo) {
+                  issues(first: 100, labels: ["decision"], states: OPEN, filterBy: {since: $fourteenDaysAgo}) {
+                    nodes {
+                      number
+                      title
+                      createdAt
+                      updatedAt
+                      assignees(first: 5) {
+                        nodes {
+                          login
+                        }
+                      }
+                      labels(first: 10) {
+                        nodes {
+                          name
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+
+            const result = await github.graphql(query, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              fourteenDaysAgo: fourteenDaysAgo.toISOString()
+            });
+
+            const issues = result.repository.issues.nodes;
+            let staleIssues = [];
+
+            for (const issue of issues) {
+              const lastUpdate = new Date(issue.updatedAt);
+              const daysSinceUpdate = Math.floor((Date.now() - lastUpdate.getTime()) / (24 * 60 * 60 * 1000));
+
+              // Consider stale if no activity for 14+ days
+              if (daysSinceUpdate >= 14) {
+                staleIssues.push({
+                  number: issue.number,
+                  title: issue.title,
+                  daysSinceUpdate: daysSinceUpdate,
+                  assignees: issue.assignees.nodes.map(a => a.login)
+                });
+              }
+            }
+
+            // Comment on stale issues
+            for (const stale of staleIssues) {
+              const commentBody = `⏰ **Stale Decision Alert**\n\n` +
+                `Diese Entscheidung wartet seit ${stale.daysSinceUpdate} Tagen auf einen Update.\n\n` +
+                `**Issue:** #${stale.number}\n` +
+                `**Title:** ${stale.title}\n\n` +
+                `Bitte prüft den Status und:\n` +
+                `- Trefft eine Entscheidung falls möglich\n` +
+                `- Aktualisiert den Zeitplan falls nötig\n` +
+                `- Schließt das Issue falls nicht mehr relevant\n\n` +
+                `Assignees: ${stale.assignees.map(a => `@${a}`).join(', ')}`;
+
+              await github.rest.issues.createComment({
+                issue_number: stale.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: commentBody
+              });
+            }
+
+            console.log(`Found ${staleIssues.length} stale decision issues`);
+
+  monthly-decision-metrics:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate monthly decision metrics
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const now = new Date();
+            const lastMonth = new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
+
+            const query = `
+              query($owner: String!, $repo: String!, $lastMonth: DateTime!) {
+                repository(owner: $owner, name: $repo) {
+                  issues(first: 100, labels: ["decision"], filterBy: {since: $lastMonth}) {
+                    nodes {
+                      number
+                      title
+                      state
+                      createdAt
+                      closedAt
+                      labels(first: 10) {
+                        nodes {
+                          name
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+
+            const result = await github.graphql(query, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              lastMonth: lastMonth.toISOString()
+            });
+
+            const issues = result.repository.issues.nodes;
+
+            // Calculate metrics
+            const totalDecisions = issues.length;
+            const openDecisions = issues.filter(i => i.state === 'OPEN').length;
+            const closedDecisions = issues.filter(i => i.state === 'CLOSED').length;
+
+            // Categorize by type
+            const type1Decisions = issues.filter(i =>
+              i.labels.nodes.some(l => l.name.includes('type-1'))
+            ).length;
+
+            const type2Decisions = issues.filter(i =>
+              i.labels.nodes.some(l => l.name.includes('type-2'))
+            ).length;
+
+            // Calculate average resolution time for closed decisions
+            const closedWithDates = issues.filter(i => i.closedAt);
+            let avgResolutionTime = 0;
+            if (closedWithDates.length > 0) {
+              const totalTime = closedWithDates.reduce((sum, issue) => {
+                const created = new Date(issue.createdAt);
+                const closed = new Date(issue.closedAt);
+                return sum + (closed.getTime() - created.getTime());
+              }, 0);
+              avgResolutionTime = Math.round(totalTime / closedWithDates.length / (24 * 60 * 60 * 1000));
+            }
+
+            // Generate report
+            const report = `# 📊 Monthly Decision Metrics Report
+
+            ## Übersicht (${lastMonth.toISOString().split('T')[0]} bis ${now.toISOString().split('T')[0]})
+
+            ### Gesamt-Statistiken
+            - **Entscheidungen insgesamt:** ${totalDecisions}
+            - **Offene Entscheidungen:** ${openDecisions}
+            - **Geschlossene Entscheidungen:** ${closedDecisions}
+            - **Durchschnittliche Bearbeitungszeit:** ${avgResolutionTime} Tage
+
+            ### Nach Entscheidungstyp
+            - **Type 1 (One-way door):** ${type1Decisions}
+            - **Type 2 (Two-way door):** ${type2Decisions}
+
+            ### Verteilung nach Kategorie
+            - **Strategische Entscheidungen:** ${issues.filter(i => i.labels.nodes.some(l => l.name.includes('strategic'))).length}
+            - **Operative Entscheidungen:** ${issues.filter(i => i.labels.nodes.some(l => l.name.includes('operational'))).length}
+            - **People & Culture:** ${issues.filter(i => i.labels.nodes.some(l => l.name.includes('people-culture'))).length}
+
+            ## Trends & Insights
+
+            ${totalDecisions > 0 ? `
+            ### Entscheidungs-Qualität
+            - **Entscheidungs-Geschwindigkeit:** ${avgResolutionTime < 7 ? 'Schnell' : avgResolutionTime < 14 ? 'Normal' : 'Langsam'}
+            - **Entscheidungs-Quote:** ${Math.round((closedDecisions / totalDecisions) * 100)}% der Entscheidungen werden abgeschlossen
+            ` : 'Keine ausreichenden Daten für Trend-Analyse'}
+
+            ## Empfehlungen
+
+            ${openDecisions > totalDecisions * 0.3 ? '⚠️ Viele offene Entscheidungen - bitte Review-Status prüfen\n' : ''}
+            ${avgResolutionTime > 14 ? '⏱️ Entscheidungen dauern lange - möglicherweise Prozess-Optimierung nötig\n' : ''}
+            ${type2Decisions > type1Decisions * 2 ? '✅ Gute Balance zwischen Experimenten und strategischen Entscheidungen\n' : ''}
+
+            ## Nächste Schritte
+
+            - Review offener Entscheidungen planen
+            - Entscheidungs-Framework bei Bedarf anpassen
+            - Team-Workshop falls Patterns negative Trends zeigen
+
+            ---
+            *Dieser Report wird monatlich automatisch generiert. Bei Fragen oder Verbesserungsvorschlägen: Issue öffnen.*`;
+
+            // Create or update the monthly report issue
+            const reportMonth = now.toISOString().split('T')[0].substring(0, 7); // YYYY-MM format
+            const reportTitle = `Decision Metrics Report - ${reportMonth}`;
+
+            // Check if report already exists for this month
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'decision-metrics',
+              state: 'open'
+            });
+
+            const existingReport = existingIssues.data.find(issue =>
+              issue.title.includes('Decision Metrics Report') &&
+              issue.title.includes(reportMonth)
+            );
+
+            if (existingReport) {
+              // Update existing report
+              await github.rest.issues.update({
+                issue_number: existingReport.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: report
+              });
+            } else {
+              // Create new report
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: reportTitle,
+                body: report,
+                labels: ['decision-metrics', 'automated']
+              });
+            }

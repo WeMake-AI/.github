@@ -6,11 +6,11 @@ config:
   extends: "markdownlint/style/prettier"
   fenced-code-language: false
   line-length:
-    line_length: 120
+    line_length: 200
     heading_line_length: 120
     code_block_line_length: 120
     code_blocks: true
-    tables: true
+    tables: false # Disable line length for tables as they're often wide
     headings: true
     strict: false
     stern: false
@@ -19,6 +19,11 @@ config:
       - details
       - summary
       - br
+  no-emphasis-as-heading: false # Allow emphasis as headings for stylistic purposes
+  no-space-in-emphasis: false # Allow spaces in emphasis markers for GitHub workflow expressions
+
+# File type specific configurations - only run on markdown files
+ignores: ["**/*.yml", "**/*.yaml", "node_modules/**"]
 
 # Custom rules from @github/markdownlint-github
 customRules:

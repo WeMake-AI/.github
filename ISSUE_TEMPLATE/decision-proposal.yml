@@ -1,0 +1,190 @@
+name: Entscheidungsvorschlag
+description: Neuer Vorschlag für eine wichtige Entscheidung
+title: "Entscheidung: [Kurze Beschreibung]"
+labels: ["decision"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Entscheidungsvorschlag
+
+        Verwende diese Vorlage für neue Entscheidungsvorschläge. Sie hilft dabei, Entscheidungen strukturiert zu treffen und zu dokumentieren.
+
+  - type: dropdown
+    id: decision-type
+    attributes:
+      label: Entscheidungstyp
+      description: Welche Art von Entscheidung ist das?
+      options:
+        - Strategisch (Produkt, Partnerschaften, Investitionen)
+        - Operativ (Features, Ressourcen, Prozesse)
+        - People & Culture (Team, Richtlinien, Kultur)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: decision-level
+    attributes:
+      label: Entscheidungsebene
+      description: Wie reversibel ist diese Entscheidung?
+      options:
+        - Type 1 - One-way door (hohe Auswirkung, schwer reversibel)
+        - Type 2 - Two-way door (reversibel, experimentell)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem-Statement
+      description: Was ist das Problem, das wir lösen müssen? Sei spezifisch und quantifiziere wo möglich.
+      placeholder: |
+        Beispiel: "Kund:innen berichten, dass E-Mail-Verarbeitung in Clarity BI zu langsam ist.
+        Durchschnittliche Verarbeitungszeit: 45 Sekunden pro E-Mail vs. Ziel: 10 Sekunden.
+        Das führt zu Frustration und niedrigerer Nutzung."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Kontext & Hintergrund
+      description: Welche Informationen helfen beim Verständnis dieser Entscheidung?
+      placeholder: |
+        - Aktuelle Situation beschreiben
+        - Warum ist das jetzt wichtig?
+        - Welche Constraints gibt es?
+        - Wer ist betroffen?
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Erkannte Optionen
+      description: Welche Alternativen haben wir? Beschreibe mindestens 3 Optionen mit Trade-offs.
+      placeholder: |
+        **Option 1: Eigenbau-Lösung**
+        Vorteile: Vollständige Kontrolle, genau auf unsere Bedürfnisse zugeschnitten
+        Nachteile: Hoher Entwicklungsaufwand (6-8 Wochen), Ressourcen-Intensiv
+        Kosten: 40.000€ Entwicklung + 3 Monate Maintenance
+
+        **Option 2: Partner-Integration**
+        Vorteile: Schnellere Time-to-Market (2-3 Wochen), bewährte Lösung
+        Nachteile: Abhängigkeit von Partner, mögliche Anpassungen nötig
+        Kosten: 15.000€ Integration + 5.000€ jährliche Lizenz
+
+        **Option 3: Open-Source-Adaptierung**
+        Vorteile: Kostengünstig, Community-Unterstützung
+        Nachteile: Technische Schulden, Maintenance-Aufwand
+        Kosten: 8.000€ Anpassung + Community-Beitrag
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact-analysis
+    attributes:
+      label: Impact-Analyse
+      description: Welche Auswirkungen erwartest du in verschiedenen Zeithorizonten?
+      placeholder: |
+        **30-Tage-Impact:**
+        - Unmittelbare Verbesserung der E-Mail-Verarbeitungsgeschwindigkeit
+        - Erste Kund:innen-Feedbacks zeigen höhere Zufriedenheit
+
+        **90-Tage-Impact:**
+        - 40% schnellere durchschnittliche Verarbeitungszeit
+        - Nutzung der E-Mail-Features steigt um 25%
+
+        **365-Tage-Impact:**
+        - E-Mail-Processing wird Kern-Feature von Clarity BI
+        - Wettbewerbsvorteil durch überlegene Performance
+        - Neue Revenue-Ströme durch Premium-E-Mail-Features
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Erfolgsmetriken
+      description: Wie messen wir den Erfolg dieser Entscheidung?
+      placeholder: |
+        - E-Mail-Verarbeitungszeit: < 10 Sekunden (aktuell: 45 Sekunden)
+        - Kund:innen-Zufriedenheit: > 4.5/5 (aktuell: 3.8/5)
+        - Feature-Nutzung: > 70% aktive Nutzung (aktuell: 45%)
+        - Support-Tickets: < 5 pro Woche (aktuell: 12 pro Woche)
+
+  - type: textarea
+    id: risks-mitigation
+    attributes:
+      label: Risiken & Mitigation
+      description: Welche Risiken gibt es und wie können wir sie mindern?
+      placeholder: |
+        **Technisches Risiko:** Performance-Verbesserung könnte andere Features verlangsamen
+        **Mitigation:** Staging-Environment für Tests, schrittweise Rollout
+
+        **Business-Risiko:** Hohe Entwicklungskosten bei ungewissem ROI
+        **Mitigation:** MVP-Ansatz, frühzeitige Kund:innen-Validierung
+
+  - type: textarea
+    id: stakeholder-input
+    attributes:
+      label: Stakeholder-Input
+      description: Welche Stakeholder sollten involviert werden? Wer muss informiert werden?
+      placeholder: |
+        **Entscheidungs-Owner:** @username (Person, die die Entscheidung trifft und verantwortet)
+
+        **Betroffene Teams:**
+        - Produkt-Team: Feature-Entwicklung
+        - Operations: Deployment und Monitoring
+        - Support: Kund:innen-Kommunikation
+
+        **Zu informieren:**
+        - Leadership: Für strategische Ausrichtung
+        - Kund:innen: Bei Änderungen der Nutzererfahrung
+
+  - type: textarea
+    id: next-steps
+    attributes:
+      label: Nächste Schritte
+      description: Was passiert als nächstes, wenn dieser Vorschlag angenommen wird?
+      placeholder: |
+        1. Entscheidung durch Owner treffen (bis: YYYY-MM-DD)
+        2. Technische Spezifikation erstellen (1 Woche)
+        3. MVP entwickeln und testen (3 Wochen)
+        4. Kund:innen-Pilot starten (2 Wochen)
+        5. Vollständiger Rollout (2 Wochen)
+
+  - type: textarea
+    id: learning-goals
+    attributes:
+      label: Lern-Ziele
+      description: Was wollen wir durch diese Entscheidung lernen?
+      placeholder: |
+        - Welche Performance-Verbesserungen sind für Kund:innen am wichtigsten?
+        - Wie skalieren unsere E-Mail-Processing-Features am besten?
+        - Welche Trade-offs zwischen Geschwindigkeit und Genauigkeit akzeptieren Kund:innen?
+
+  - type: checkboxes
+    id: transparency-checklist
+    attributes:
+      label: Transparenz-Checkliste
+      description: Stelle sicher, dass diese Entscheidung transparent getroffen wird
+      options:
+        - Entscheidung wird öffentlich dokumentiert (außer vertraulich)
+        - Alternativen wurden erkundet und dokumentiert
+        - Trade-offs sind klar dargestellt
+        - Lern-Metriken sind definiert
+        - Rationale wird öffentlich erklärt
+        - Review-Checkpoints sind geplant
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Weiterführende Informationen
+
+        - [Entscheidungsrahmen](/docs/DECISION_FRAMEWORK.md) - Vollständige Dokumentation
+        - [Entscheidungsmatrix](/docs/decision-matrix.md) - Template-Auswahlhilfe
+        - [Company Handbuch](/profile/README.md) - Unsere Prinzipien und Werte
+
+        Nach Einreichung dieses Vorschlags:
+        1. Entscheidungs-Owner wird zugewiesen
+        2. Stakeholder werden informiert
+        3. Entscheidung wird getroffen und dokumentiert
+        4. Review-Checkpoints werden eingerichtet
