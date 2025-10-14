@@ -1,202 +1,211 @@
-# WeMake Security Policy
+# WeMake Sicherheitsrichtlinie
 
-## Enterprise Security Standards
+## Enterprise-Sicherheitsstandards
 
-WeMake maintains enterprise-grade security standards for all Model Context Protocol (MCP) server implementations, AI
-agent integrations including Clarity BI (meetclarity.de / clarity.bi), and Cloudflare Workers deployments. Our security
-framework is designed to meet German and European regulatory requirements, including GDPR, NIS2, and emerging AI
-governance standards.
+WeMake unterhält Enterprise-Grade-Sicherheitsstandards für alle Implementierungen von Model Context Protocol
+(MCP)-Servern, KI-Agenten-Integrationen einschließlich Clarity BI (meetclarity.de / clarity.bi) sowie Cloudflare
+Workers-Deployments. Unser Sicherheitsframework ist darauf ausgelegt, deutsche und europäische Regulierungsanforderungen
+zu erfüllen, einschließlich DSGVO (GDPR), NIS2 und aufkommender KI-Governance-Standards.
 
-## Supported Versions
+## Unterstützte Versionen
 
-We are finalizing our formal support policy. Interim commitment:
+Wir finalisieren derzeit unsere formale Support-Policy. Zwischenzeitliche Verpflichtung:
 
-- Supported versions: latest two minor releases of 1.x (rolling window)
-- Security updates: Critical/High for supported versions
-- EOL: 90 days after the next minor release
-- Full policy will be published by end of 2025. Tracking: <https://github.com/wemake-ai/mcp/issues/32>
+- Unterstützte Versionen: neueste zwei Minor-Releases von 1.x (rollendes Fenster)
+- Sicherheitsupdates: Critical/High für unterstützte Versionen
+- EOL (End-of-Life): 90 Tage nach dem nächsten Minor-Release
+- Vollständige Policy wird bis Ende 2025 veröffentlicht. Tracking: <https://github.com/wemake-ai/mcp/issues/32>
 
-This Security Policy was last updated in August 2025 and applies to data subjects in the European Economic Area and
-Switzerland.
+Diese Sicherheitsrichtlinie wurde zuletzt im August 2025 aktualisiert und gilt für betroffene Personen im Europäischen
+Wirtschaftsraum und der Schweiz.
 
-## AI Security Framework
+## KI-Sicherheitsframework
 
 ### Model Context Protocol (MCP) Security
 
-- **Authentication & Authorization**: Multi-layered access controls with role-based permissions for MCP server
-  interactions
-- **Data Validation**: Strict input/output validation for all MCP tool calls and responses, including email content and
-  document processing
-- **Code Understanding & Review**: Prioritize security through comprehensive code review processes, as understanding
-  code is more critical than generating it. Implement mandatory human review for AI-generated security-sensitive code
-- **SAST/DAST/SCA**: Static/dynamic analyses and dependency audits mandatory in CI
-- **SBOM**: Signed SBOMs (e.g. SPDX/CycloneDX) for MCP servers and AI agents
-- **Test Coverage Gate**: ≥90% (branches/lines) as a merge requirement for security-relevant components
-- **Sandboxing**: Isolated execution environments for AI agent operations, including secure email and document
-  processing
-- **Audit Logging**: Comprehensive logging of all AI interactions for compliance and security monitoring
-- **Rate Limiting**: Advanced throttling mechanisms to prevent abuse and ensure service availability
-- **Content Security**: File type validation, malware scanning, and secure attachment processing for email and document
-  inputs
+- **Authentifizierung & Autorisierung**: Mehrschichtige Zugriffskontrollen mit rollenbasierten Berechtigungen für
+  MCP-Server-Interaktionen
+- **Datenvalidierung**: Strikte Input/Output-Validierung für alle MCP-Tool-Aufrufe und -Antworten, einschließlich
+  E-Mail-Inhalten und Dokumentenverarbeitung
+- **Code-Verständnis & Review**: Priorisierung der Sicherheit durch umfassende Code-Review-Prozesse, da das Verstehen
+  von Code kritischer ist als dessen Generierung. Implementierung obligatorischer menschlicher Überprüfung für
+  KI-generierten sicherheitskritischen Code
+- **SAST/DAST/SCA**: Statische/dynamische Analysen und Dependency-Audits obligatorisch in CI
+- **SBOM**: Signierte SBOMs (z. B. SPDX/CycloneDX) für MCP-Server und KI-Agenten
+- **Test-Coverage-Gate**: ≥90 % (Branches/Lines) als Merge-Anforderung für sicherheitsrelevante Komponenten
+- **Sandboxing**: Isolierte Ausführungsumgebungen für KI-Agenten-Operationen, einschließlich sicherer E-Mail- und
+  Dokumentenverarbeitung
+- **Audit-Logging**: Umfassendes Logging aller KI-Interaktionen für Compliance- und Sicherheitsmonitoring
+- **Rate Limiting**: Erweiterte Drosselungsmechanismen zur Missbrauchsprävention und Sicherstellung der
+  Service-Verfügbarkeit
+- **Content Security**: Dateityp-Validierung, Malware-Scanning und sichere Verarbeitung von Anhängen für E-Mail- und
+  Dokumenten-Inputs
 
 ### Cloudflare Workers Security
 
-- **Edge Security**: Leveraging Cloudflare's global security infrastructure
-- **Zero Trust Architecture (Edge/Access)**: No implicit trust for any component or user
-- **DDoS Protection**: Built-in protection against distributed denial-of-service attacks
-- **Encryption in Transit (TLS)**: TLS 1.2+/1.3; mTLS for service-to-service traffic (for details see
-  [Data Protection & Encryption](#data-protection--encryption))
-- **Content Security Policy**: Strict CSP headers to mitigate XSS and injection attack vectors
+- **Edge Security**: Nutzung der globalen Sicherheitsinfrastruktur von Cloudflare
+- **Zero Trust Architecture (Edge/Access)**: Kein implizites Vertrauen für Komponenten oder Benutzer
+- **DDoS Protection**: Integrierter Schutz gegen Distributed-Denial-of-Service-Angriffe
+- **Encryption in Transit (TLS)**: TLS 1.2+/1.3; mTLS für Service-to-Service-Traffic (Details siehe
+  [Datenschutz & Verschlüsselung](#datenschutz--verschlüsselung))
+- **Content Security Policy**: Strikte CSP-Header zur Abwehr von XSS- und Injection-Angriffsvektoren
 
-### GDPR & Data Protection
+### DSGVO & Datenschutz
 
-- **Data Minimization**: Collecting only necessary data for AI operations, including email and document processing
-- **Purpose Limitation**: Using data solely for specified, legitimate purposes
-- **Storage Limitation**: Automated data retention and deletion policies with tiered storage approaches
-- **Data Subject Rights**: Comprehensive support for access, rectification, and erasure requests
-- **Privacy by Design**: Built-in privacy protections in all AI systems
-- **Cross-Border Transfers**: Compliant data transfer mechanisms for global operations
-- **Data Portability/Restriction/Objection**: Support for Art. 20/18/21 GDPR requests
-- **DPIA**: Data Protection Impact Assessments for high-risk processing (Art. 35 GDPR)
-- **RoPA**: Records of Processing Activities maintained (Art. 30 GDPR)
-- **User Data Export and Deletion**: Secure export capabilities and automated deletion for user data and processed
-  content
-- **How to submit DSRs**: [privacy@wemake.cx](mailto:privacy@wemake.cx) or DSR portal:
+- **Datenminimierung**: Erhebung ausschließlich notwendiger Daten für KI-Operationen, einschließlich E-Mail- und
+  Dokumentenverarbeitung
+- **Zweckbindung**: Verwendung von Daten ausschließlich für spezifizierte, legitime Zwecke
+- **Speicherbegrenzung**: Automatisierte Datenaufbewahrungs- und Löschrichtlinien mit gestaffelten Speicheransätzen
+- **Betroffenenrechte**: Umfassende Unterstützung für Auskunfts-, Berichtigungs- und Löschungsanträge
+- **Privacy by Design**: Eingebaute Datenschutzmaßnahmen in allen KI-Systemen
+- **Grenzüberschreitende Übermittlungen**: Konforme Datentransfermechanismen für globale Operationen
+- **Datenübertragbarkeit/Einschränkung/Widerspruch**: Unterstützung für Anfragen gemäß Art. 20/18/21 DSGVO
+- **DSFA**: Datenschutz-Folgenabschätzungen für Hochrisiko-Verarbeitungen (Art. 35 DSGVO)
+- **VVT**: Verzeichnis von Verarbeitungstätigkeiten wird geführt (Art. 30 DSGVO)
+- **Benutzerdatenexport und -löschung**: Sichere Exportfunktionen und automatisierte Löschung für Benutzerdaten und
+  verarbeitete Inhalte
+- **Einreichung von DSR (Data Subject Requests)**: [privacy@wemake.cx](mailto:privacy@wemake.cx) oder DSR-Portal:
   [https://wemake.cx/privacy/requests](https://wemake.cx/privacy/requests)
 
-## Vulnerability Reporting
+## Schwachstellen-Meldung
 
-### Responsible Disclosure
+### Verantwortungsvolle Offenlegung (Responsible Disclosure)
 
-We encourage responsible disclosure of security vulnerabilities. Please report security issues to:
+Wir fördern die verantwortungsvolle Offenlegung von Sicherheitsschwachstellen. Bitte melden Sie Sicherheitsprobleme an:
 
-**Email**: [security@wemake.cx](mailto:security@wemake.cx)  
-**PGP Key**: [Download public key](https://wemake.cx/.well-known/pgp-key.asc)  
-**PGP Fingerprint**: `3DAA 7730 D3FB B35D D9B9 1E2C 3BF4 9577 F25A 95D5`  
-**Response Time**: Initial acknowledgment within 24 hours  
-**PGP Key ID**: 3BF49577F25A95D5  
-**Algorithm**: ed25519  
-**Valid Until**: 2027-08-17 (Rotation policy: biannual)
+**E-Mail**: [security@wemake.cx](mailto:security@wemake.cx)  
+**PGP-Schlüssel**: [Öffentlichen Schlüssel herunterladen](https://wemake.cx/.well-known/pgp-key.asc)  
+**PGP-Fingerprint**: `3DAA 7730 D3FB B35D D9B9 1E2C 3BF4 9577 F25A 95D5`  
+**Antwortzeit**: Erste Bestätigung innerhalb von 24 Stunden  
+**PGP-Key-ID**: 3BF49577F25A95D5  
+**Algorithmus**: ed25519  
+**Gültig bis**: 2027-08-17 (Rotationsrichtlinie: halbjährlich)
 
-#### Safe Harbor
+#### Safe-Harbor-Regelung
 
-WeMake supports good-faith security research. If you comply with this policy and act responsibly,  
-we will not pursue legal action for your research activities.
+WeMake unterstützt gutgläubige Sicherheitsforschung. Wenn Sie dieser Richtlinie entsprechen und verantwortungsvoll
+handeln, werden wir keine rechtlichen Schritte gegen Ihre Forschungsaktivitäten einleiten.
 
 #### security.txt
 
-Our security disclosure details are also published at:
+Unsere Sicherheitsoffenlegungsdetails sind ebenfalls veröffentlicht unter:  
 [security.txt (RFC 9116)](https://wemake.cx/.well-known/security.txt)
 
-### Reporting Guidelines
+### Meldungsrichtlinien
 
-When reporting vulnerabilities, please include:
+Bei der Meldung von Schwachstellen fügen Sie bitte folgende Informationen bei:
 
-1. **Vulnerability Type**: Classification (e.g., AI safety, data privacy, infrastructure)
-2. **Affected Components**: Specific MCP servers, AI agents, or infrastructure components
-3. **Impact Assessment**: Potential business and security impact
-4. **Reproduction Steps**: Detailed steps to reproduce the vulnerability
-5. **Proof of Concept**: Non-destructive demonstration if applicable
-6. **Suggested Remediation**: Proposed fixes or mitigations
+1. **Schwachstellentyp**: Klassifizierung (z. B. KI-Sicherheit, Datenschutz, Infrastruktur)
+2. **Betroffene Komponenten**: Spezifische MCP-Server, KI-Agenten oder Infrastrukturkomponenten
+3. **Impact-Assessment**: Potenzielle geschäftliche und sicherheitstechnische Auswirkungen
+4. **Reproduktionsschritte**: Detaillierte Schritte zur Reproduktion der Schwachstelle
+5. **Proof of Concept**: Nicht-destruktive Demonstration, falls anwendbar
+6. **Vorgeschlagene Remediation**: Vorgeschlagene Fixes oder Mitigationsmaßnahmen
 
-### Security Response Process
+### Sicherheits-Response-Prozess
 
-1. **Acknowledgment** (24h): Confirmation of receipt and initial triage
-2. **Investigation** (72h): Technical analysis and impact assessment
-3. **Severity Classification**: CVSS v3.1 score mapping to Critical/High/Medium/Low
-4. **Remediation** (Target SLAs): Critical ≤7d, High ≤14d, Medium ≤30d, Low ≤90d (best effort)
-5. **Disclosure** (30–90d): Coordinated public disclosure after remediation
-6. **Recognition**: Public acknowledgment of responsible reporters (with permission)
+1. **Bestätigung** (24h): Empfangsbestätigung und initiales Triage
+2. **Untersuchung** (72h): Technische Analyse und Impact-Assessment
+3. **Schweregrad-Klassifizierung**: CVSS v3.1 Score-Mapping zu Critical/High/Medium/Low
+4. **Remediation** (Ziel-SLAs): Critical ≤7d, High ≤14d, Medium ≤30d, Low ≤90d (best effort)
+5. **Offenlegung** (30–90d): Koordinierte öffentliche Offenlegung nach Remediation
+6. **Anerkennung**: Öffentliche Würdigung verantwortungsvoller Melder (mit Einwilligung)
 
-Note on timelines:
+Hinweise zu Zeitangaben:
 
-- SLAs refer to calendar days unless stated otherwise; timezone: UTC
-- Coordinated disclosure and embargo periods honored as agreed
-- SLA clock starts: upon receipt at [security@wemake.cx](mailto:security@wemake.cx) (mail server timestamp)
-- CVE handling: We request CVEs (via CNA or MITRE) for qualifying issues and coordinate IDs before disclosure
+- SLAs beziehen sich auf Kalendertage, sofern nicht anders angegeben; Zeitzone: UTC
+- Koordinierte Offenlegungs- und Embargo-Perioden werden wie vereinbart eingehalten
+- SLA-Start: bei Eingang bei [security@wemake.cx](mailto:security@wemake.cx) (Mailserver-Zeitstempel)
+- CVE-Handhabung: Wir beantragen CVEs (über CNA oder MITRE) für qualifizierende Issues und koordinieren IDs vor
+  Offenlegung
 
-#### CVSS v3.1 Mapping (Guidance)
+#### CVSS v3.1 Mapping (Leitfaden)
 
-- None: 0.0
-- Critical: 9.0–10.0
-- High: 7.0–8.9
-- Medium: 4.0–6.9
-- Low: 0.1–3.9
+- None: 0,0
+- Critical: 9,0–10,0
+- High: 7,0–8,9
+- Medium: 4,0–6,9
+- Low: 0,1–3,9
 
-## Technical and Organizational Measures
+## Technische und organisatorische Maßnahmen
 
-### Enterprise AI Security Controls
+### Enterprise-KI-Sicherheitskontrollen
 
-WeMake has implemented comprehensive technical and organizational measures appropriate for enterprise AI development and
-MCP server operations:
+WeMake hat umfassende technische und organisatorische Maßnahmen implementiert, die für Enterprise-KI-Entwicklung und
+MCP-Server-Operationen angemessen sind:
 
-#### Data Protection & Encryption
+#### Datenschutz & Verschlüsselung
 
-- **Encryption at Rest & In Transit**: AES-256 encryption for data at rest; TLS 1.2+/1.3 with strong cipher suites
-  (AES-GCM-256 or ChaCha20-Poly1305) for data in transit, including email content and document processing
-- **Key Management**: Hardware Security Modules (HSMs) for cryptographic key protection
-- **Pseudonymization/Anonymization**: Pseudonymization by default; anonymization where feasible for AI training data
-- **Data Masking**: Dynamic data masking for development and testing environments
-- **Content Processing Security**: End-to-end encryption for email and document content during processing and storage
+- **Verschlüsselung im Ruhezustand & bei Übertragung**: AES-256-Verschlüsselung für Daten im Ruhezustand; TLS 1.2+/1.3
+  mit starken Cipher Suites (AES-GCM-256 oder ChaCha20-Poly1305) für Daten bei Übertragung, einschließlich
+  E-Mail-Inhalten und Dokumentenverarbeitung
+- **Key Management**: Hardware Security Modules (HSMs) für kryptografischen Schlüsselschutz
+- **Pseudonymisierung/Anonymisierung**: Pseudonymisierung standardmäßig; Anonymisierung wo durchführbar für
+  KI-Trainingsdaten
+- **Data Masking**: Dynamisches Data Masking für Entwicklungs- und Testumgebungen
+- **Content-Processing-Security**: Ende-zu-Ende-Verschlüsselung für E-Mail- und Dokumenteninhalte während Verarbeitung
+  und Speicherung
 
-#### AI System Security
+#### KI-Systemsicherheit
 
-- **Model Integrity**: Cryptographic signatures for AI model verification
-- **Prompt Injection Protection**: Advanced filtering and validation for AI inputs
-- **Output Sanitization**: Comprehensive validation of AI-generated content
-- **Adversarial Defense**: Protection against model poisoning and evasion attacks
-- **Model Supply Chain Security**: Signed artifacts (e.g., Sigstore), SLSA level targets, and provenance attestations
-- **Model/Dataset Cards**: Standardized documentation on provenance, intended use, limitations, and risks
+- **Modellintegrität**: Kryptografische Signaturen zur Verifikation von KI-Modellen
+- **Prompt-Injection-Schutz**: Erweiterte Filterung und Validierung für KI-Inputs
+- **Output-Sanitization**: Umfassende Validierung von KI-generierten Inhalten
+- **Adversarial Defense**: Schutz gegen Model Poisoning und Evasion-Angriffe
+- **Model Supply Chain Security**: Signierte Artefakte (z. B. Sigstore), SLSA-Level-Ziele und Provenance-Attestierungen
+- **Model/Dataset Cards**: Standardisierte Dokumentation zu Provenienz, Verwendungszweck, Limitationen und Risiken
 
-#### Infrastructure Security
+#### Infrastruktursicherheit
 
-- **Zero Trust Network**: Micro-segmentation and continuous verification
-- **Container Security**: Hardened container images with vulnerability scanning
-- **Secrets Management**: Automated rotation and secure storage of credentials
-- **Network Isolation**: Segregated environments for different security zones
-- **Egress Filtering**: Restrictive outbound firewall policies; allow only required destinations/ports
-- **DNS Security**: DNSSEC/DoT/DoH, threat-intelligence blocklists, and egress DNS pinning
+- **Zero Trust Network**: Mikrosegmentierung und kontinuierliche Verifikation
+- **Container Security**: Gehärtete Container-Images mit Schwachstellen-Scanning
+- **Secrets Management**: Automatisierte Rotation und sichere Speicherung von Credentials
+- **Netzwerkisolation**: Segregierte Umgebungen für verschiedene Sicherheitszonen
+- **Egress Filtering**: Restriktive Outbound-Firewall-Policies; Erlaubnis nur für erforderliche Ziele/Ports
+- **DNS Security**: DNSSEC/DoT/DoH, Threat-Intelligence-Blocklists und Egress-DNS-Pinning
 
-#### Operational Security
+#### Operative Sicherheit
 
-- **Continuous Monitoring**: 24/7 security operations center (SOC) monitoring
-- **Incident Response**: Automated threat detection and response capabilities
-- **Backup & Recovery**: Automated, encrypted backups with tested recovery procedures
-- **Business Continuity**: Disaster recovery plans with defined RTO/RPO objectives
+- **Continuous Monitoring**: 24/7-Security-Operations-Center (SOC)-Monitoring
+- **Incident Response**: Automatisierte Threat-Detection- und Response-Fähigkeiten
+- **Backup & Recovery**: Automatisierte, verschlüsselte Backups mit getesteten Wiederherstellungsverfahren
+- **Business Continuity**: Disaster-Recovery-Pläne mit definierten RTO/RPO-Zielen
 
 #### Compliance & Governance
 
-- **Regular Audits**: Quarterly security assessments and penetration testing
-- **Compliance Monitoring**: Automated GDPR and regulatory compliance checking
-- **Risk Assessment**: Continuous risk evaluation and mitigation strategies
-- **Security Training**: Regular security awareness training for all personnel
+- **Regelmäßige Audits**: Vierteljährliche Sicherheitsbewertungen und Penetrationstests
+- **Compliance-Monitoring**: Automatisierte DSGVO- und Regulierungs-Compliance-Prüfung
+- **Risikobewertung**: Kontinuierliche Risikoevaluierung und Mitigationsstrategien
+- **Sicherheitsschulungen**: Regelmäßige Security-Awareness-Schulungen für alle Mitarbeitenden
 
-### AI-Specific Risk Mitigation
+### KI-spezifische Risikominderung
 
-Our security framework addresses unique risks in AI development, recognizing that code understanding is the primary
-security challenge:
+Unser Sicherheitsframework adressiert einzigartige Risiken in der KI-Entwicklung und erkennt an, dass Code-Verständnis
+die primäre Sicherheitsherausforderung darstellt:
 
-- **Code Comprehension Security**: Mandatory documentation explaining AI-generated code decisions and security
-  implications
-- **Review Quality Assurance**: Enhanced review processes for AI-generated code with focus on understanding over speed
-- **Data Poisoning**: Robust data validation and provenance tracking
-- **Model Extraction**: Protection against unauthorized model access and replication
-- **Bias Detection**: Automated monitoring for algorithmic bias and fairness
-- **Explainability**: Transparent AI decision-making processes for audit trails with emphasis on reviewer understanding
-- **Human Oversight**: Mandatory human review for high-risk AI decisions with sufficient time for proper comprehension
+- **Code-Comprehension-Security**: Obligatorische Dokumentation zur Erklärung von KI-generierten Code-Entscheidungen und
+  Sicherheitsimplikationen
+- **Review-Quality-Assurance**: Erweiterte Review-Prozesse für KI-generierten Code mit Fokus auf Verständnis über
+  Geschwindigkeit
+- **Data Poisoning**: Robuste Datenvalidierung und Provenance-Tracking
+- **Model Extraction**: Schutz gegen unauthorisierten Modellzugriff und Replikation
+- **Bias Detection**: Automatisiertes Monitoring für algorithmische Verzerrungen und Fairness
+- **Explainability**: Transparente KI-Entscheidungsprozesse für Audit-Trails mit Schwerpunkt auf Reviewer-Verständnis
+- **Human Oversight**: Obligatorische menschliche Überprüfung für Hochrisiko-KI-Entscheidungen mit ausreichender Zeit
+  für angemessenes Verständnis
 
 ---
 
-_This Security Policy is regularly updated to address emerging threats in AI and enterprise security. Last updated:
-August 2025_
+_Diese Sicherheitsrichtlinie wird regelmäßig aktualisiert, um aufkommende Bedrohungen in KI und Enterprise-Security zu
+adressieren. Zuletzt aktualisiert: August 2025_
 
-## Contact & Support
+## Kontakt & Support
 
-For security-related inquiries, vulnerability reports, or compliance questions regarding all WeMake products including
-Clarity BI:
+Für sicherheitsbezogene Anfragen, Schwachstellenmeldungen oder Compliance-Fragen zu allen WeMake-Produkten
+einschließlich Clarity BI:
 
 - **Security Team**: [security@wemake.cx](mailto:security@wemake.cx)
-- **Emergency Hotline**: Available 24/7 for critical security incidents
+- **Emergency Hotline**: 24/7 verfügbar für kritische Sicherheitsvorfälle
 
-WeMake is committed to maintaining the highest standards of security and privacy in all our AI development and
-deployment activities, including email and document processing systems.
+WeMake verpflichtet sich zur Aufrechterhaltung höchster Standards für Sicherheit und Datenschutz in allen
+KI-Entwicklungs- und Deployment-Aktivitäten, einschließlich E-Mail- und Dokumentenverarbeitungssystemen.
