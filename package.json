@@ -10,14 +10,14 @@
     "commitlint": "^19.8.1",
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.5.2",
     "markdownlint": "^0.38.0",
     "markdownlint-cli2": "^0.18.1",
     "markdownlint-cli2-formatter-pretty": "^0.0.8",
     "prettier": "^3.6.2"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.2"
   },
   "scripts": {
     "lint": "bun lint:markdown && bun lint:prettier",
