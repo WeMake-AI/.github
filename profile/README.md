@@ -14,63 +14,90 @@ Dieses Handbuch erklärt simpel, wie wir arbeiten. Es gehört zu den wichtigsten
 
 ### Unsere Mission
 
+Wir lösen das Problem der kognitiven Überlastung in Organisationen. Die Systeme, die wir geschaffen haben, überfordern
+die menschlichen Fähigkeiten – WeMake baut Technologie, die für Menschen arbeitet, nicht umgekehrt.
+
 Wir transformieren Organisationen durch verantwortungsvolle KI – so, dass Menschen mehr Wirkung entfalten, Arbeit
-sinnvoller wird und Unternehmen schneller lernen. Wir bauen Lösungen, die echte Probleme lösen: operativ, strategisch,
-menschlich. Wir sind German-first in Qualität, Ethik, Sicherheit und Sprache – offen gegenüber der Welt, aber mit einem
-präzisen Verständnis für den hiesigen Kontext.
+sinnvoller wird und Unternehmen schneller lernen. Wir bauen keine weiteren Tools, sondern bessere Systeme. Wir sind
+German-first in Qualität, Ethik, Sicherheit und Sprache – offen gegenüber der Welt, aber mit präzisem Verständnis für
+den hiesigen Kontext.
 
-#### Ein paar Worte
+#### Das Problem ist real
 
-- Arbeit ist eine Praxis. Gute Arbeit braucht Haltung, Handwerk und Systeme.
-- Technologie ist kein Selbstzweck. Sie ist ein Verstärker von Fähigkeiten – gut, wenn die Richtung stimmt, gefährlich,
-  wenn nicht.
-- Verantwortung ist kein Buzzword. Sie ist eine tägliche Entscheidung, sichtbar in Code, Verträgen, Beratung und
-  Support.
-- Wir messen uns an Wirkung: Was ist nach 30, 90, 365 Tagen besser? Für Nutzer:innen, Teams, Kund:innen und die
+Knowledge Workers verbringen 2,6 Stunden pro Tag nur mit E-Mails. Nach jeder Unterbrechung dauert es 23 Minuten, um
+wieder fokussiert zu arbeiten. 47% fühlen sich von Tool-Fragmentierung überwältigt.
+
+Wir leiden nicht an einem Mangel an Produktivitäts-Tools. Wir ertrinken in ihnen.
+
+#### Traditionelle Lösungen scheitern
+
+Projektmanagement-Software reduziert keine kognitive Last – sie verteilt sie um. E-Mail-Filter schaffen keine Klarheit –
+sie verschieben Entscheidungen. Mehr Meetings verbessern keine Abstimmung – sie verbrauchen die Zeit, die für Ausführung
+nötig ist.
+
+Wir nutzen moderne Infrastruktur, um Workflows der Industrieära aufrechtzuerhalten. Das ist kein Technologie-Problem. Es
+ist ein Design-Problem.
+
+#### Unsere Grundüberzeugung
+
+- **Augmentation, nicht Automation**: Wir ersetzen keine menschliche Arbeit – wir verstärken menschliche Kapazität.
+  Technologie muss sich an die Art anpassen, wie Menschen arbeiten.
+- **Systeme über Tools**: Wir bauen das Betriebssystem für organisationale Intelligenz, nicht das nächste
+  Produktivitäts-Tool.
+- **Verantwortung ist operativ**: Sie ist eine tägliche Entscheidung, sichtbar in Code, Verträgen, Beratung und Support.
+- **Wirkung ist messbar**: Was ist nach 30, 90, 365 Tagen besser? Für Nutzer:innen, Teams, Kund:innen und die
   Gesellschaft.
 
-#### Du kannst mehr als nur eine oder zwei Lösungen erschaffen
+#### Du kannst mehr als deine Rolle
 
 Unsere Grundannahme: Menschen sind zu mehr fähig, als typische Rollenbeschreibungen zulassen. Deshalb entwerfen wir
-Arbeit so, dass du mehrere Lösungen erschaffen kannst – nicht nur ein Feature. Dazu gehören:
+Arbeit so, dass du Systeme baust, nicht nur Features:
 
-- breite Ownership (Problem → Lösung → Betrieb → Lernen),
-- Zugriff auf die „Infrastruktur des Könnens“ (Clarity, V41),
-- Coaching, Dokumentation und Feedback-Loops,
-- klare, öffentlich nachvollziehbare Entscheidungen (PRs, RFCs, Architektur-Entscheidungs-Records),
-- Tools, die aus dem Weg gehen statt Arbeit zu verkomplizieren.
+- Breite Ownership (Problem → Lösung → Betrieb → Lernen)
+- Zugriff auf die nötigen Werkzeuge und Infrastruktur
+- Coaching, Dokumentation und Feedback-Loops
+- Klare, öffentlich nachvollziehbare Entscheidungen (PRs, RFCs, ADRs)
+- Tools, die aus dem Weg gehen statt Arbeit zu verkomplizieren
 
 ### Unsere Strategie
 
-#### 1. Quelle der Wahrheit für Kunden- und KI-Lösungen sein
+#### 1. Das Problem wirklich verstehen
 
-- Wir verbinden strategische Beratung mit ausführbarer Technologie.
-- Clarity ist unsere organisatorische Intelligenzschicht, V41 die multimodale Grundlage.
-- Unser Consulting ist nicht vom Produkt getrennt – es operationalisiert Mission, Ethik und Architektur.
+Bevor wir Lösungen bauen, verstehen wir das fundamentale Problem: Die kognitive Last ist nicht nachhaltig, und mehr
+Tools machen es nur schlimmer. Wir beginnen bei der Wurzel – technologiegestützten Systemen, die sich an menschliche
+Arbeitsweisen anpassen.
 
-#### 2. Jede benötigte Lösung anbieten, um Unternehmen beim Wachstum zu helfen
+#### 2. Bessere Systeme bauen, nicht mehr Tools
 
-- Wir bauen, kuratieren und orchestrieren Lösungen entlang echter Wertströme: Vertrieb, Operationen, Support,
-  Compliance, Produkt, People.
-- Unsere Toolbox (Clarity/V41) ermöglicht spezifische, wiederholbare Lösungen – industrienahe, aber nicht
-  kundenspezifisch verhärtet.
+- Wir verbinden strategische Beratung mit ausführbarer Technologie
+- Unsere Lösungen sind organisatorische Funktionen, keine isolierten Tools
+- Das Consulting ist nicht vom Produkt getrennt – es operationalisiert Mission, Ethik und Architektur
+- Wir bauen, kuratieren und orchestrieren Lösungen entlang echter Wertströme
 
-#### 3. Als Erste am Start sein
+#### 3. Augmentation vor Automation
 
-- Time-to-Learn vor Time-to-Launch. Wir priorisieren schnelle, valide Lernzyklen über „perfekte“ Roadmaps.
+- Automation ersetzt menschliche Arbeit. Augmentation verstärkt menschliche Kapazität.
+- Unsere Systeme eliminieren nicht deine Inbox – sie verwandeln sie in handlungsfähige Intelligenz
+- Sie ersetzen nicht dein Urteil – sie entfernen den Lärm, der es verdeckt
+- Sie managen nicht deine Zeit – sie geben sie dir zurück
+
+#### 4. Als Erste lernen, dann liefern
+
+- Time-to-Learn vor Time-to-Launch
+- Wir priorisieren schnelle, valide Lernzyklen über "perfekte" Roadmaps
 - Standardmäßig bauen wir iterativ in der Öffentlichkeit: Changelog, Demo-Umgebungen, offene Doks, öffentliche
-  Diskussionen.
+  Diskussionen
 
 ### Geheimer Masterplan
 
 Geheim ist hier nur die Ironie. Der Plan ist öffentlich:
 
-- Heute (Ist): Beratung, Orchestration und Umsetzung mit Clarity/V41; produktive Implementierungen; transparente
-  Richtlinien.
-- Nächste 12–24 Monate (Zielbild): mehr Self-Serve, smartere Automations-Patterns, intensivere Readiness-Checks,
-  breitere Library wiederverwendbarer Lösungen; Ausbau unserer deutschen Sprach- und Kulturkompetenz in Modellen.
-- Langfristig: WeMake als Referenz für verantwortungsvolle, wirksame KI im deutschsprachigen Raum; Infrastruktur statt
-  Einzelprojekt.
+- **Heute (Ist)**: Problem-Fokus auf kognitive Überlastung. Lösungs-Ansatz: Augmentation durch intelligente Systeme.
+  Beratung + Technologie als Einheit. Transparente Richtlinien.
+- **Nächste 12–24 Monate**: Mehr autonome Systeme, die wirklich für Menschen arbeiten. Breitere Library systemischer
+  Lösungen. Tiefere Integration in organisationale Workflows. Ausbau deutscher Sprach- und Kulturkompetenz.
+- **Langfristig**: WeMake als Referenz für organisationale Intelligenz im DACH-Raum. Vom Projekt zur Infrastruktur.
+  Standard für verantwortungsvolle Augmentation.
 
 </details><br/>
 
@@ -80,64 +107,91 @@ Geheim ist hier nur die Ironie. Der Plan ist öffentlich:
 
 ## Wie wir hierher gekommen sind
 
-Dinge, die uns beeinflusst haben
+### Dinge, die uns beeinflusst haben
 
-### Bücher (Typus, nicht Checkliste)
+#### Bücher und Denkweisen (Typus, nicht Checkliste)
 
-- Systems Thinking, antifragile Organisationen, Ethik in der Technik, Menschen in komplexen Systemen.
-- Praktiken: RFCs, Design Docs, Postmortems, operatives Lernen, Entscheidungsjournal.
-- Haltung: Klarheit, Mut, Konsequenz.
+- Systems Thinking und komplexe Systeme
+- Antifragile Organisationen
+- Ethik in der Technik
+- Menschen in komplexen Systemen
+- Kognitionswissenschaft und Human-Computer Interaction
+- Praktiken: RFCs, Design Docs, Postmortems, operatives Lernen, Entscheidungsjournal
 
-### Andere Unternehmen (als Lernfelder)
+#### Andere Unternehmen (als Lernfelder)
 
-- Open-Source-Communities (Governance, Reviews, Contribution-Kultur).
-- Sicherheits- und Cloud-Pioniere (Zero Trust, Resilienz, Automatisierung).
-- Produktteams, die Dokumentation wie ein Produkt behandeln.
+- Open-Source-Communities (Governance, Reviews, Contribution-Kultur)
+- Sicherheits- und Cloud-Pioniere (Zero Trust, Resilienz, Automatisierung)
+- Produktteams, die Dokumentation wie ein Produkt behandeln
+- Forschung zu kognitiver Last und Produktivität (Microsoft, McKinsey, UC Irvine)
 
-### Handbuch (als Werkzeug)
+#### Handbuch (als Werkzeug)
 
 - Dieses Handbuch ist lebendig. Wir committen es. Wir versionieren es. Wir reviewen es.
 - Es existiert nicht, um recht zu haben, sondern um besser zu werden.
 - Wenn Realität und Handbuch divergieren, gewinnt die Realität – und wir passen das Handbuch an.
 
-### Analogien, die uns prägen (kurz und ehrlich)
+#### Prinzipien, die uns prägen
 
-- Open Source → Unser Arbeitsmodell: öffentlich, nachvollziehbar, Beiträge willkommen.
-- Stadtinfrastruktur → Unsere Plattformstrategie: Clarity/V41 sind Straßen, Strom, Wasser; auf ihnen entstehen Produkte.
-- Gym, nicht Spa → Unsere Kultur: Du trainierst Verantwortung und Fähigkeiten; Komfort ist ein Nebenprodukt, kein Ziel.
+- **Problem First**: Wir beginnen beim echten Problem (kognitive Überlastung), nicht bei Lösungen
+- **Augmentation über Automation**: Technologie verstärkt Menschen, ersetzt sie nicht
+- **Systeme über Tools**: Mehr Tools sind selten die Antwort
+- **Open Process**: Öffentlich, nachvollziehbar, Beiträge willkommen
+- **Outcome über Output**: Wirkung schlägt Lieferung
+- **Verantwortung ist operativ**: Sichtbar in Code, Verträgen, Support
 
 </details><br/>
 
 <details>
 
-<summary>3. Wie wir Nutzer:innen gewinnen  </summary>
+<summary>3. Wie wir Nutzer:innen gewinnen</summary>
 
 ## Wie wir Nutzer:innen gewinnen
 
 ### Warum wir so sind, wie wir sind
 
-- Wir lösen echte Probleme – keine hypothetischen.
-- Wir sprechen die Sprache unserer Nutzer:innen (wörtlich: Deutsch; fachlich: die Sprache der Domäne).
-- Vertrauen ist unsere Währung: Transparenz, Sicherheit, Klarheit in Erwartungen.
+- Wir beginnen mit dem Problem, nicht der Lösung
+- Wir sprechen über kognitive Überlastung, bevor wir über unsere Antwort sprechen
+- Wir adressieren das fundamentale Design-Problem, nicht Symptome
+- Vertrauen ist unsere Währung: Transparenz, Sicherheit, Klarheit in Erwartungen
 
-### Für uns bedeutet Marketing, nützliche Inhalte zu erstellen
+### Marketing = Problem-Verständnis + nützliche Inhalte
 
-- Inhalte sind unser Marketing. Von Deep-Dives bis zu Praxisguides.
-- Kein „Hype as a Service“. Wir erklären, wie Dinge funktionieren – und wie nicht.
-- Wir teilen: Benchmarks, Metriken, Trade-offs, Entscheidungen und ihre Kosten.
+**Das Problem artikulieren:**
 
-### Wir investieren gerne viel in unsere Website
+- 2,6 Stunden/Tag in E-Mails verloren (McKinsey, 2022)
+- 23 Minuten Refokussierung nach Unterbrechung (UC Irvine, 2021)
+- 47% fühlen sich von Tool-Fragmentierung überwältigt (Asana, 2024)
 
-- Die Website ist ein Produkt. Sie ist die erste Erfahrung mit WeMake.
-- Sie ermöglicht Self-Serve: Demos, Docs, Sandboxen, direkte Buchungen – möglichst ohne Sales-Termin.
-- Sie ist schnell, barrierearm, suchbar, verständlich, aktualisiert.
-- Sie sagt, was wir tun – und was nicht.
+**Warum traditionelle Lösungen scheitern:**
 
-### Wir machen es dir extrem leicht, WeMake-Lösungen zu kaufen
+- Sie verteilen Last um, reduzieren sie nicht
+- Sie perpetuieren Industrieära-Workflows mit moderner Infrastruktur
+- Sie erhöhen Komplexität statt sie zu reduzieren
 
-- Freemium/Trials, klare Nutzungsmodelle, einfache Verträge.
-- Abkürzungen statt Hürden: Direktkauf, Pilot, Pay-as-you-go.
-- Keine versteckten Gebühren; Preise werden erklärt, nicht verschleiert.
+**Unsere Inhalte:**
+
+- Von Deep-Dives zur Kognitionswissenschaft bis zu Praxisguides
+- Kein "Hype as a Service" – wir erklären, wie Dinge funktionieren und wie nicht
+- Wir teilen: Benchmarks, Metriken, Trade-offs, Entscheidungen und ihre Kosten
+- Problem-Definition vor Solution-Selling
+
+### Wir investieren in unsere Website
+
+- Die Website ist die erste Erfahrung mit WeMake – sie muss das Problem verstehen helfen
+- Sie ermöglicht Self-Serve: Problem-Verständnis, Lösungs-Kontext, Demos, Docs, Sandboxen
+- Sie ist schnell, barrierearm, suchbar, verständlich, aktualisiert
+- Sie sagt, was wir tun – und was nicht
+- Sie erklärt das "Warum" vor dem "Was"
+
+### Es einfach machen, mit uns zu arbeiten
+
+- Freemium/Trials für Problem-Exploration
+- Klare Nutzungsmodelle
+- Einfache Verträge
+- Abkürzungen statt Hürden: Direktkauf, Pilot, Pay-as-you-go
+- Keine versteckten Gebühren
+- Preise werden erklärt, nicht verschleiert
 
 </details><br/>
 
@@ -147,43 +201,84 @@ Dinge, die uns beeinflusst haben
 
 ## Für wen wir entwickeln
 
+### Das eigentliche Problem
+
+Organisationen mit hoher kognitiver Last auf Knowledge Workers, die unter:
+
+- E-Mail-Überlastung und ständigen Unterbrechungen
+- Tool-Fragmentierung und Context-Switching
+- Langsamer Entscheidungsfindung trotz Datenflut
+- Verlust von Deep Work und strategischem Denken
+
 ### Unser aktuelles ICP (Ideales Kundenprofil)
 
-- Organisationen im DACH-Raum mit klarem Anspruch an Qualität, Sicherheit, Ethik.
-- Teams, die bereit sind, mit KI operativ zu arbeiten (nicht nur zu diskutieren).
-- Domänen mit Regulierung: Gesundheit, Finanz, Industrie, öffentliche Hand, Bildung – dort, wo Sorgfalt Pflicht ist.
-- Menschen, die Gleichheit, Empowerment und Sinnhaftigkeit ernst meinen – und die Konsequenzen tragen wollen (Ownership,
-  Lernkurven, Feedback).
+**Organisationsmerkmale:**
+
+- DACH-Raum mit klarem Anspruch an Qualität, Sicherheit, Ethik
+- Bereitschaft, mit KI operativ zu arbeiten (nicht nur zu diskutieren)
+- Regulierte Domänen: Gesundheit, Finanz, Industrie, öffentliche Hand, Bildung
+
+**Team-Merkmale:**
+
+- Klare Pain Points durch kognitive Überlastung
+- Datenzugang und operative Bereitschaft
+- Sponsor mit Ownership
+- Ernstnehmen von Gleichheit, Empowerment, Sinnhaftigkeit
 
 ### Häufig gestellte Fragen (FAQ)
 
-#### An wen sollten wir beim Kreieren besonders denken?
+#### An wen denken wir beim Kreieren besonders?
 
-- An die eigentlichen Praktiker:innen: die Person, die den Prozess betreibt, die den Fehler ausbaden muss, die wirklich
-  Zeit spart oder verliert.
-- An Führungskräfte mit Verantwortung für Wirkung, nicht nur Zahlen.
-- An Kolleg:innen, die später onboarden – Dokumentation als Willkommenspaket.
+- Die Praktiker:innen, die mit fragmentierten Workflows kämpfen
+- Menschen, die in E-Mails und Meetings ertrinken
+- Entscheider:innen, die schneller und besser entscheiden müssen
+- Teams, die mehr Zeit für wertschöpfende Arbeit brauchen
+- Kolleg:innen, die später onboarden – Dokumentation als Willkommenspaket
 
-#### Was ist ein:e Kunde:in mit hohem Potenzial und warum ist das wichtig?
+#### Was ist ein:e Kunde:in mit hohem Potenzial?
 
-- Hohes Potenzial = klare Pain Points, Datenzugang, operative Bereitschaft, Sponsor mit Ownership.
-- Wichtig, weil wir Ergebnisse wollen: schnelle Lernzyklen, wiederholbare Muster, skalierbare Lösungen.
+**Hohes Potenzial bedeutet:**
 
-#### Was ist ein Hobbyist und warum ist das wichtig?
+- Klare Pain Points (messbare kognitive Überlastung)
+- Datenzugang und technische Bereitschaft
+- Operative Bereitschaft (will wirklich arbeiten, nicht nur reden)
+- Sponsor mit Ownership und Budget
 
-- Hobbyist:in = experimentiert, aber ohne echte Anwendung/Verbindlichkeit.
-- Wichtig, um freundlich zu sein, aber fokussiert zu bleiben: Wir helfen gern, doch wir priorisieren Wirkung.
+**Wichtig, weil:**
+
+- Wir wollen echte Ergebnisse: Reduktion kognitiver Last
+- Schnelle Lernzyklen über Wirksamkeit
+- Wiederholbare Muster für Skalierung
+
+#### Was ist ein Hobbyist und warum wichtig?
+
+**Hobbyist:in bedeutet:**
+
+- Experimentiert, aber ohne echte Anwendung/Verbindlichkeit
+- Kein messbares Problem mit kognitiver Überlastung
+- Keine operative Umsetzungsbereitschaft
+
+**Wichtig, um:**
+
+- Freundlich zu sein, aber fokussiert zu bleiben
+- Zeit auf High-Impact-Arbeit zu konzentrieren
+- Wir helfen gern, aber priorisieren Wirkung
 
 #### Warum das KI-Team?
 
-- Weil Umsetzung zählt: Daten, Prozesse, Sicherheit, Governance, Integration.
-- Das KI-Team sorgt für wiederholbare Qualität, nicht für bunte Demos.
+Weil Umsetzung zählt. Augmentation statt Automation erfordert:
+
+- Verständnis für kognitive Prozesse
+- Integration in existierende Workflows
+- Sicherheit, Governance, Ethik
+- Das KI-Team sorgt für wiederholbare Qualität, nicht bunte Demos
 
 #### Was ist mit Marketing?
 
-- Marketing ist Teil des Produkts: Inhalte, Demos, Dokumentation, Community.
-- Ziel: Verstehen ermöglichen und Hürden senken.
-- Sales ist Beratung, nicht Druck.
+- Marketing ist Teil des Problem-Verständnisses
+- Inhalte, Demos, Dokumentation erklären das "Warum"
+- Ziel: Verstehen ermöglichen, Hürden senken
+- Sales ist Beratung, nicht Druck
 
 </details><br/>
 
@@ -193,18 +288,41 @@ Dinge, die uns beeinflusst haben
 
 ## Wie wir Nutzer:innen glücklich machen
 
-### Lösungen schaffen, die Menschen wirklich wollen
+### Lösungen schaffen, die wirklich wirken
 
-- Wir starten bei den Aufgaben, nicht bei den Features.
-- Wir messen Wirkung: Zeitersparnis, Fehlerreduktion, Qualität, Zufriedenheit.
-- Wir bauen klein und lernen schnell: Proof → Pilot → Produktion.
-- Wir dokumentieren, was wir lernen – öffentlich, wenn möglich.
+**Wir starten beim Problem:**
 
-### Expert:innen sprechen mit Nutzer:innen und bieten Support
+- Wie viel Zeit geht in fragmentierten Workflows verloren?
+- Wie sehr leiden Entscheidungen unter Information Overload?
+- Wo geht Deep Work verloren?
 
-- Keine Support-Warteschlange mit Skript. Du sprichst mit den Menschen, die es gebaut haben.
-- Review/Support-Calls sind kurz, konkret, lösungsorientiert; async-first; nachvollziehbar dokumentiert.
-- Wir sind ehrlich über Trade-offs – und helfen dir, die richtige Entscheidung zu treffen.
+**Wir messen Wirkung:**
+
+- Zeitersparnis durch reduzierte kognitive Last
+- Verbesserte Entscheidungsqualität
+- Mehr Zeit für wertschöpfende Arbeit
+- Zufriedenheit und Produktivität
+
+**Unser Prozess:**
+
+- Wir bauen klein und lernen schnell
+- Proof → Pilot → Produktion
+- Wir dokumentieren Learnings – öffentlich, wenn möglich
+
+### Expert:innen sprechen mit Nutzer:innen
+
+- Keine Support-Warteschlange mit Skript
+- Du sprichst mit den Menschen, die Systeme entworfen haben
+- Review/Support-Calls sind kurz, konkret, lösungsorientiert
+- Async-first; nachvollziehbar dokumentiert
+- Wir sind ehrlich über Trade-offs zwischen Augmentation-Ansätzen
+
+### Feedback als Lernquelle
+
+- Nutzer-Feedback informiert System-Design
+- Wir fragen: "Reduziert das echte kognitive Last?"
+- Wir tracken Nutzung und Wirkung
+- Transparenz über Tests und Experimente
 
 </details><br/>
 
@@ -214,40 +332,54 @@ Dinge, die uns beeinflusst haben
 
 ## Wie wir Geld verdienen
 
-### Unser Vertriebsansatz basiert auf der besten Erfahrung für unser ideales Kundenprofil
+### Vertrieb = Problem-Verständnis zuerst
 
-- Self-Serve und Low-Touch, wo möglich. High-Touch nur, wo notwendig.
-- Inhalte, Demos, Readiness-Checks senken Akquisekosten und erhöhen Passung.
-- Wir verkaufen keine Luftschlösser – unsere Lösungen sind nutzbar, nicht nur vorzeigbar.
+**Unser Ansatz:**
 
-### Preise sollten kein Hindernis sein
+- Self-Serve und Low-Touch, wo möglich
+- High-Touch nur, wo systemische Integration nötig
+- Wir verkaufen zuerst das Problem, dann die Lösung
+- Inhalte, Demos, Readiness-Checks senken Akquisekosten
 
-- Transparente Modelle, Einstieg ohne Kapitalblocker.
-- Wir stellen Nutzen vor Margenmaximierung – nachhaltig, nicht naiv.
-- Wir investieren in Effizienz und Automatisierung, um Preise dauerhaft niedrig zu halten.
+**Was wir nicht tun:**
 
-### Abrechnung nach tatsächlicher Nutzung und volle Kontrolle für Nutzer:innen
+- Luftschlösser verkaufen
+- Feature-Listen präsentieren ohne Problem-Kontext
+- Auf Hype setzen statt auf Verständnis
 
-- Pay-as-you-go, Caps, Limits, Alarmierungen: du kontrollierst deine Kosten.
-- Exportierbarkeit von Daten und Metriken ist kein Premium-Feature.
-- Kündigen ist so leicht wie Buchen.
+### Preise als Teil der Lösung
 
-### Die günstigste Option für jede einzelne Lösung sein
+**Grundprinzip:** Wenn wir kognitive Last wirklich reduzieren und Effektivität erhöhen, sollte der Wert evident sein.
 
-- Wir optimieren auf TCO (Total Cost of Ownership): Implementierung, Betrieb, Risiken.
-- Wenn Open-Source günstiger und gut genug ist, empfehlen wir es – selbst wenn es uns kurzfristig Umsatz kostet.
-- Wir verdienen Vertrauen, bevor wir Umsatz maximieren.
+**Unsere Praxis:**
 
-### Prinzipien für den Umgang mit Großkund:innen (Enterprise)
+- Transparente Modelle, Einstieg ohne Kapitalblocker
+- Wir stellen Nutzen vor Margenmaximierung – nachhaltig, nicht naiv
+- Wir investieren in Effizienz, um Preise dauerhaft niedrig zu halten
+- Total Cost of Ownership: Implementation + Betrieb + Risiken
 
-- Es ist okay, Deals zu verlieren. Wir bleiben Prinzipien treu.
-- Wir sagen vertraglich keine spezifischen Liefergegenstände zu; wir liefern Ergebnisse entlang definierter Ziele und
-  Messgrößen.
-- Wir entwickeln Dinge, wenn wir überzeugt sind, dass sie mehr als eine Organisation nutzen kann.
-- Kund:innen müssen Lösungen ausprobieren, bevor sie Änderungen erwarten können – Lernen schlägt Hypothesen.
-- Produktmanagement/CSM ist nicht Standard – aber als leichtgewichtiges, temporäres Werkzeug okay, wenn Skalierung,
-  Koordination oder Compliance es erfordern.
-- Sicherheit und Ethik sind nicht verhandelbar.
+### Abrechnung nach Wirkung
+
+- Pay-as-you-go mit Kontrolle: Caps, Limits, Alarmierungen
+- Nutzende kontrollieren ihre Kosten
+- Exportierbarkeit von Daten und Metriken ist Standard
+- Kündigen ist so leicht wie Buchen
+
+### TCO-optimiert sein
+
+- Wir optimieren Total Cost of Ownership
+- Implementation, laufende Kosten, Risiken
+- Wenn Open-Source besser passt und gut genug ist, empfehlen wir es
+- Vertrauen verdienen, bevor Umsatz maximieren
+
+### Prinzipien für Enterprise
+
+- **Deals verlieren ist okay**: Wir bleiben Prinzipien treu
+- **Ergebnisse, nicht Features**: Wir sagen keine spezifischen Liefergegenstände zu, wir liefern Wirkung
+- **Develop mit Wiederverwendung**: Wenn überzeugt, dass es mehr als eine Org nutzen kann
+- **Testen vor Ändern**: Kund:innen müssen Systeme ausprobieren – Lernen schlägt Hypothesen
+- **PM/CSM nur bei Bedarf**: Temporär, leichtgewichtig bei Enterprise-Komplexität
+- **Non-negotiables**: Sicherheit und Ethik
 
 </details><br/>
 
@@ -257,30 +389,37 @@ Dinge, die uns beeinflusst haben
 
 ## Dauerhaft niedrige Preise
 
-### Wir können mehrere Produkte an dieselben Personen verkaufen
+### Unsere Kostenstruktur
 
-- Ein Problem selten allein; wer ein Problem löst, hat meist ein zweites – wir liefern modular und integrierbar.
-- Cross-Solution-Design spart Implementierungskosten.
+**Mehrere Lösungen, ein System:**
 
-### Kein Vertrieb notwendig
+- Probleme kommen selten allein – unsere Lösungen adressieren systemische Überlastung
+- Gemeinsame Infrastruktur senkt Kosten
+- Integration ist eingebaut, nicht nachträglich
 
-- Dokumentation, Demos, Sandboxen, Online-Buchung – wir senken Hürden, damit du selbst entscheiden kannst.
-- Vertrieb ist Beratung, nicht Druck.
+**Self-Serve reduziert Sales-Kosten:**
 
-### Mehrere Lösungen, ein Datensatz
+- Problem-Dokumentation ist öffentlich
+- Demos, Sandboxen, Online-Buchung ermöglichen Selbst-Evaluation
+- Sales ist Beratung bei Bedarf, nicht Druck
 
-- Clarity als Orchestrator, V41 als Kern – einheitliche Identitäten, Metriken, Governance.
-- Weniger Integration, weniger Brüche, weniger Kosten.
+**Ein System, integrierte Daten:**
 
-### Ein technisches Publikum, das Dokumentation statt technischen Support benötigt
+- Zentrale Orchestrierung, einheitliche Identitäten
+- Governance über Lösungen hinweg
+- Weniger Integration = weniger Kosten
 
-- Wir schreiben Doks, die wirklich helfen: How-tos, Playbooks, Architekturen, Entscheidungsleitfäden.
-- Wir investieren in Beispiele, SDKs, Templates, statt Tickets zu züchten.
+**Technisch versierte Zielgruppe:**
 
-### Nutzung von Open-Source-Technologie
+- Dokumentation über Tickets
+- How-tos, Playbooks, Architekturen, Entscheidungsleitfäden
+- Selbst-Onboarding wo möglich
 
-- Wir nutzen, was gut ist – und geben zurück, wo wir können.
-- Open Source ist auch ein Governance-Modell: öffentlich, reviewbar, forkbar.
+**Open-Source-Nutzung:**
+
+- Wir nutzen, was gut ist – und geben zurück
+- Open Source als Governance-Modell
+- Community-getriebene Qualität
 
 </details><br/>
 
@@ -290,19 +429,50 @@ Dinge, die uns beeinflusst haben
 
 ## Entscheidung über neue Lösungen
 
-### Wie wir Features innerhalb bestehender Lösungen auswählen
+### Wie wir Verbesserungen innerhalb bestehender Systeme auswählen
 
-- Leitfrage: Wessen Problem lösen wir – und wie schnell lernen wir?
-- Kriterien: Nutzen, Wiederverwendbarkeit, Sicherheit, Komplexität, Pflegeaufwand, Dokumentierbarkeit.
-- Formate: RFCs, Architekturentscheidungen, kleine Experimente, öffentliche Changelogs.
+**Leitfrage:** Reduziert das echte kognitive Last? Ist es systemische Verbesserung oder Feature-Bloat?
+
+**Kriterien:**
+
+- **Problem-Fit**: Löst es ein echtes Problem oder ein Symptom?
+- **Systemische Integration**: Fügt es sich nahtlos ein oder addiert es Komplexität?
+- **Augmentation-Qualität**: Verstärkt es menschliche Kapazität messbar?
+- **Wiederverwendbarkeit**: Hilft es mehreren Kontexten?
+- **Sicherheit und Ethik**: Erfüllt es unsere Standards?
+- **Pflegeaufwand**: Ist es nachhaltig wartbar?
+- **Dokumentierbarkeit**: Können andere es verstehen und nutzen?
+
+**Formate:**
+
+- RFCs für signifikante Änderungen
+- Architekturentscheidungen (ADRs)
+- Kleine Experimente mit klaren Hypothesen
+- Öffentliche Changelogs
 
 ### Wie wir neue Lösungen auswählen
 
-- Wir wählen dann neu, wenn ein Problem nicht sinnvoll in bestehende Lösungen integrierbar ist – oder wenn ein neues
-  Fähigkeitsbündel entsteht.
-- Wir vermeiden Produktfriedhöfe: klarer Owner, klare Metriken, klare Exit-Kriterien.
-- Wir schreiben vor dem Bauen die Doks, die wir später brauchen (Install, Runbook, Troubleshooting, Security, Ethics,
-  Metrics).
+**Wir wählen dann neu, wenn:**
+
+- Ein Problem nicht sinnvoll in bestehende Systeme integrierbar ist
+- Ein neues Fähigkeitsbündel entsteht, das kognitive Last anders adressiert
+- Systemische Verbesserung Tool-Addition schlägt
+
+**Vermeidung von Produktfriedhöfen:**
+
+- **Klarer Owner**: Wer trägt Verantwortung?
+- **Klare Metriken**: Welche Wirkung erwarten wir?
+- **Klare Exit-Kriterien**: Wann stoppen wir?
+- **Dokumentation first**: Schreibe vor dem Bauen die Doks, die später nötig sind (Install, Runbook, Troubleshooting,
+  Security, Ethics, Metrics)
+
+**Die Fragen, die wir stellen:**
+
+- Löst es ein fundamentales Problem oder ein Symptom?
+- Reduziert es kognitive Last oder verteilt sie um?
+- Augmentiert es Menschen oder automatisiert nur?
+- Passt es in unsere System-Architektur?
+- Können wir es nachhaltig betreiben?
 
 </details><br/>
 
@@ -312,30 +482,51 @@ Dinge, die uns beeinflusst haben
 
 ## Ein breites Unternehmen mit kleinen Teams
 
-### Geschwindigkeit
+### Geschwindigkeit durch Lernen
 
-- Geschwindigkeit = kurze Batch-Größen + klare Verantwortungen + öffentlich nachvollziehbare Entscheidungen.
-- Wir optimieren nicht auf Auslastung, sondern auf Durchsatz und Lerngeschwindigkeit.
+#### Geschwindigkeit = kurze Batch-Größen + klare Verantwortung + öffentliche Entscheidungen
 
-### Kleine Teams
+- Wir optimieren nicht auf Auslastung, sondern auf Durchsatz und Lerngeschwindigkeit
+- Problem verstehen → Hypothese bilden → Testen → Lernen → Iterieren
+- Schnelle Lernzyklen über perfekte Planung
 
-- Kleine, autonome Zellen mit End-to-End-Verantwortung.
-- Teams haben alles, was sie brauchen, oder sie bauen es – wir reduzieren Abhängigkeiten.
+### Kleine Teams, End-to-End
+
+**Charakteristik:**
+
+- Kleine, autonome Zellen mit End-to-End-Verantwortung
+- Teams haben alles, was sie brauchen, oder sie bauen es
+- Reduzieren von Abhängigkeiten
+- Problem → Lösung → Betrieb → Lernen
+
+**Ownership bedeutet:**
+
+- Systemverständnis, nicht nur Feature-Delivery
+- Verantwortung für Wirkung
+- Kontext selbst holen, entscheiden, dokumentieren
 
 ### Minimale Hierarchie
 
-- Führung ist eine Tätigkeit, kein Rangabzeichen.
-- Wir führen über Klarheit, nicht über Kontrolle.
+**Prinzip:** Führung ist Tätigkeit, kein Rangabzeichen
 
-### Titel basierend auf deiner tatsächlichen Tätigkeit
+- Wir führen über Klarheit und Kontext, nicht Kontrolle
+- Entscheidungen werden dort getroffen, wo Kontext ist
+- Transparenz ermöglicht Autonomie
 
-- Nenn dich so, wie du wirkst. Titel spiegeln Output, nicht Wunsch.
-- Karrierewege sind Pfade des Könnens, nicht Treppen aus Karotten.
+### Titel = tatsächliche Tätigkeit
+
+- Nenn dich so, wie du wirkst
+- Titel spiegeln Impact und Rolle, nicht Wunsch
+- Karrierewege sind Pfade des Könnens und der Wirkung
 
 ### Zielsetzung
 
-- Wir nutzen klare, messbare Ziele mit Feedback-Loops.
-- „Ship small, learn big“: kleine Releases, große Lerneffekte.
+**Ansatz:**
+
+- Klare, messbare Ziele mit Feedback-Loops
+- "Ship small, learn big": Kleine Releases, große Lerneffekte
+- Outcomes über Outputs
+- Wirkung auf kognitive Last ist zentrale Metrik
 
 </details><br/>
 
@@ -345,45 +536,72 @@ Dinge, die uns beeinflusst haben
 
 ## Wie wir ein erstklassiges Team aufbauen
 
-Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
+### Persönlichkeitsmerkmale, die zum Erfolg führen
 
-### Echte Gestalter:innen
+#### Problem-Löser:innen, nicht Feature-Builder
 
-- Du willst Dinge in die Welt bringen. Du kannst abstrahieren und bauen.
-- Du baust Systeme, die andere besser machen.
+- Du denkst in Systemen, nicht Tickets
+- Du verstehst, dass mehr Tools selten die Antwort sind
+- Du kannst fundamentale Probleme von Symptomen unterscheiden
+- Du baust Systeme, die Menschen besser machen
 
-### Unkomplizierte Zusammenarbeit
+#### Systemdenker:innen
 
-- Du kommunizierst klar, freundlich, präzise.
-- Du arbeitest async und respektierst Fokuszeiten.
+- Du siehst, wie Teile zusammenwirken und emergente Eigenschaften erzeugen
+- Du verstehst Feedback-Loops und zweite Ordnungseffekte
+- Du bevorzugst Integration über Isolation
+- Du denkst in TCO, nicht nur Implementation
 
-### Bereitschaft, den gemeinsamen Weg zu gehen
+#### Verantwortungsbewusste Gestalter:innen
 
-- Erfolg ist Teamleistung. Du teilst Kredit und lernst aus Fehlern.
-- Du gehst Konflikte an – früh, offen, lösungsorientiert.
+- Du verstehst, dass Technologie Verstärker ist – gut oder gefährlich
+- Du denkst über ethische Implikationen nach
+- Verantwortung ist für dich operativ, nicht theoretisch
+- Du hinterfragst "Können wir?" mit "Sollten wir?"
 
-### Treiber:innen, nicht Mitfahrer:innen
+#### Unkomplizierte Zusammenarbeit
 
-- Du wartest nicht auf Erlaubnis; du holst dir Kontext und legst los.
-- Du verantwortest Wirkung.
+- Du kommunizierst klar, freundlich, präzise
+- Du arbeitest async und respektierst Fokuszeiten
+- Du teilst Kontext proaktiv
+- Du dokumentierst Entscheidungen
+
+#### Treiber:innen, nicht Mitfahrer:innen
+
+- Du wartest nicht auf Erlaubnis
+- Du holst Kontext und legst los
+- Du verantwortest Outcomes, nicht nur Outputs
+- "Warum nicht jetzt?" ist deine Frage
 
 ### Gute Gründe, bei uns anzufangen
 
-- Du willst an der vordersten Linie arbeiten: Ethik, Sicherheit, Wirksamkeit.
-- Du willst remote, eigenverantwortlich, mit klarem Impact arbeiten.
-- Du willst lernen, dokumentieren, teilen – und andere mitziehen.
+- Du willst fundamentale Probleme lösen, nicht Symptome bekämpfen
+- Du willst an der vordersten Linie von KI, Org-Design und kognitiver Wissenschaft arbeiten
+- Du willst remote, eigenverantwortlich, mit klarem Impact arbeiten
+- Du willst lernen, dokumentieren, teilen – und andere mitziehen
+- Du willst Systeme bauen, die Menschen stärken
 
 ### Warum du nicht zu uns kommen solltest
 
-- Wenn du Komfort über Verantwortung stellst.
-- Wenn dir Transparenz unangenehm ist.
-- Wenn du lieber verwaltet wirst als zu führen.
+- Wenn du lieber Features baust als Probleme löst
+- Wenn dir Tool-Komplexität lieber ist als systemische Einfachheit
+- Wenn dir Transparenz unangenehm ist
+- Wenn du lieber verwaltet wirst als zu führen
+- Wenn du Komfort über Verantwortung stellst
 
-### Eine kleine Gruppe starker Menschen und Vergütung
+### Eine kleine Gruppe starker Menschen
 
-- Wenige, starke Menschen schlagen große, durchschnittliche Teams.
-- Vergütung ist fair, transparent, kompetitiv – mit Ownership-Optionen, wenn sinnvoll.
-- Wir vergüten Wirkung, nicht Präsenz.
+**Team-Philosophie:**
+
+- Wenige, starke Menschen schlagen große, durchschnittliche Teams
+- Tiefes Problem-Verständnis über breite Feature-Kenntnis
+- Systemdenker:innen über Spezialisten
+
+**Vergütung:**
+
+- Fair, transparent, kompetitiv
+- Mit Ownership-Optionen, wenn sinnvoll
+- Wir vergüten Wirkung, nicht Präsenz
 
 </details><br/>
 
@@ -395,28 +613,41 @@ Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
 
 ### Du steuerst selbst
 
-- Kontext > Kontrolle. Wir geben Richtung, du findest den besten Weg.
-- Wir erwarten, dass du Entscheidungen triffst – und sie öffentlich erklärst.
+- **Kontext > Kontrolle**: Wir geben Problem-Verständnis, du findest den Weg
+- **Ownership bedeutet**: Problem verstehen, Systemkontext greifen, entscheiden, dokumentieren, iterieren
+- **Wir erwarten**: Du triffst Entscheidungen und erklärst sie öffentlich
 
 ### Mach es öffentlich
 
-- Public by default: PRs, Issues, Docs, Roadmaps – alles, was nicht vertraulich sein muss.
-- Öffentlichkeit ist ein Qualitätsfilter und ein Lehrmeister.
+- **Public by default**: PRs, Issues, Docs, Roadmaps, Problem-Definitionen
+- **Warum**: Öffentlichkeit ist Qualitätsfilter und Lehrmeister
+- **Ausnahme**: Was vertraulich sein muss (Security, Customer-Data)
 
-### Mehr Mut zum Ungewöhnlichen
+### Systemdenken über Feature-Denken
 
-- Konventionen sind bequem; Fortschritt ist unbequem.
-- Wir suchen dort, wo andere nicht hinschauen – und wir erklären, was wir finden.
+- **Die Frage**: Löst das das fundamentale Problem oder ein Symptom?
+- **Wir bevorzugen**: Systemische Verbesserungen über Tool-Addition
+- **Wir suchen**: Integration über Isolation
+- **Emergenz verstehen**: Systeme sind mehr als die Summe ihrer Teile
 
 ### Warum nicht jetzt?
 
-- Heute ist besser als demnächst. Klein anfangen, groß lernen.
-- Risiken klar benennen, nicht vermeiden.
+- **Heute ist besser als demnächst**: Klein anfangen, schnell lernen
+- **MVP bedeutet**: Minimum Viable Problem-Solution-Fit
+- **Risiken klar benennen**: Nicht vermeiden, sondern transparent machen
+
+### Mehr Mut zum Ungewöhnlichen
+
+- **Konventionen sind bequem**: Fortschritt ist oft unbequem
+- **Wir suchen**: Wo andere nicht hinschauen
+- **Wir hinterfragen**: "Das haben wir immer so gemacht"
+- **Wir erklären**: Was wir anders machen und warum
 
 ### Grundsätzlich optimistisch
 
-- Wir sind Realist:innen mit Blick nach vorne.
-- Probleme sind Einladungen zu Systemdesign.
+- **Realist:innen mit Blick nach vorne**: Komplexe Probleme sind lösbar
+- **Probleme als Einladung**: Zu besserem System-Design
+- **Menschen können mehr**: Als ihre Rollen erlauben
 
 </details><br/>
 
@@ -428,32 +659,67 @@ Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
 
 ### Standardmäßig kein Produktmanagement
 
-- Unsere Default-Einstellung: Engineers, Researchers, Designer:innen sprechen direkt mit Nutzer:innen.
-- Produktmanagement/CSM aktivieren wir leichtgewichtig, temporär, dort wo Enterprise-Kontext, Koordination oder
-  Compliance dies erfordern.
-- Ziel: Weniger Übersetzungsschichten, mehr geteiltes Verständnis, schnellere Lernschleifen.
+**Unsere Default-Einstellung:**
+
+- Engineers, Researchers, Designer:innen sprechen direkt mit Nutzer:innen
+- Problem-Verständnis kann man nicht delegieren
+- Weniger Übersetzungsschichten = besseres Verstehen = bessere Systeme
+
+**Wann aktivieren wir PM/CSM:**
+
+- Leichtgewichtig, temporär
+- Wo Enterprise-Kontext, Koordination oder Compliance es erfordern
+- Als Unterstützung, nicht als Gatekeeper
+- Ziel: Mehr geteiltes Verständnis, schnellere Lernschleifen
 
 ### Transparenz ist der Treibstoff für Autonomie
 
-- Jede Entscheidung hat einen PR, ein Issue oder ein ADR.
-- Protokolle, Postmortems, Metriken sind Standard.
-- Sicherheit und Ethik sind mitdokumentiert.
+- **Jede Entscheidung**: Hat PR, Issue oder ADR
+- **Problem-Definition**: Ist öffentlich
+- **Lösungsansätze**: Sind dokumentiert
+- **Metriken und Learnings**: Sind teilbar
+- **Protokolle, Postmortems**: Sind Standard
+- **Sicherheit und Ethik**: Sind mitdokumentiert
 
 ### Es beginnt mit der Einstellung
 
-- Wir stellen Menschen ein, die Verantwortung wollen und können.
-- Wir prüfen Fähigkeiten, Haltung, Lernfähigkeit; wir coachen, wir testen in der Praxis.
+**Wen wir einstellen:**
 
-### Ein hoher Anteil unseres Teams sind Tech-Talente aller Geschlechter
+- Menschen, die Systeme verstehen wollen
+- Die zwischen Problemen und Symptomen unterscheiden können
+- Die Verantwortung wollen und können
+- Die Augmentation über Automation stellen
 
-- Technologie ist unser Medium, Vielfalt unser Verstärker.
-- Wir achten auf Sprache, Chancen, Räume – damit Kompetenz sichtbar wird.
+**Wie wir prüfen:**
+
+- Systemdenken und Problem-Verständnis
+- Haltung und Lernfähigkeit
+- Praktische Tests: Build something meaningful, small
+- Cultural Fit: Werte und Arbeitsweise
+
+### Hoher Anteil Tech-Talente aller Geschlechter
+
+**Warum wichtig:**
+
+- Augmentation erfordert tiefes technisches Verständnis
+- Systemische Lösungen brauchen systemisches Denken
+- Vielfalt ist unser Verstärker für bessere Lösungen
+
+**Wie wir das sichern:**
+
+- Sprache, Chancen, Räume bewusst gestalten
+- Kompetenz sichtbar machen
+- Inclusive by design
 
 ### Konzentriertes Arbeiten
 
-- Async-first, tiefe Fokuszeiten, wenige Meetings.
-- Kommunikation ist schriftlich, prägnant, respektvoll.
-- Slack ist für Koordination; Entscheidungen stehen in PRs/Issues.
+**Unsere Kultur:**
+
+- Async-first für Deep Work
+- Tiefe Fokuszeiten, wenige Meetings
+- Kommunikation ist schriftlich, prägnant, respektvoll
+- Slack für Koordination; Entscheidungen in PRs/Issues
+- "Maker Schedule" wird respektiert
 
 </details><br/>
 
@@ -465,20 +731,34 @@ Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
 
 ### Ruhe bewahren und auf Überleben ausgerichtet sein
 
-- Wir priorisieren Runway und Wirkung vor Wachstum um jeden Preis.
-- Wir betreiben Szenarien und Frühwarnsysteme.
+- **Runway-Fokus**: Wir priorisieren Nachhaltigkeit über Wachstum um jeden Preis
+- **Szenarien-Planung**: Wir betreiben Szenarien und Frühwarnsysteme
+- **Wirkung pro Euro**: Effizienz ist Teil unserer DNA
 
 ### Prinzipien zur Kapitalbeschaffung
 
-- Kapital ist ein Werkzeug, kein Ziel.
-- Wir nehmen Geld nur zu Bedingungen, die unsere Prinzipien schützen.
-- Transparenz gegenüber Team und Community hat Priorität.
+**Grundsatz:** Kapital ist Werkzeug für Mission, kein Ziel an sich
+
+- Wir nehmen Geld nur zu Bedingungen, die Prinzipien schützen
+- Mission und Werte sind nicht verhandelbar
+- Transparenz gegenüber Team und Community hat Priorität
+- Langfristige Nachhaltigkeit über schnelles Wachstum
 
 ### Wie wir es ausgeben
 
-- In Infrastruktur, die viele Lösungen ermöglicht (Clarity, V41).
-- In Menschen, die Systeme bauen, nicht nur Tickets bearbeiten.
-- In Inhalte, die nutzen – Doks, Playbooks, Forschung, Benchmarks.
+**Prioritäten:**
+
+- In Infrastruktur, die systemische Lösungen ermöglicht
+- In Menschen, die Systeme bauen und Probleme verstehen
+- In Inhalte, die Problem-Verständnis schaffen: Docs, Playbooks, Forschung
+- In Forschung zu kognitiver Last und Augmentation
+- In Sicherheit, Ethik, Qualität
+
+**Nicht ausgeben für:**
+
+- Feature-Bloat ohne Problem-Fit
+- Marketing ohne Substanz
+- Overhead ohne Wirkung
 
 </details><br/>
 
@@ -488,21 +768,46 @@ Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
 
 ## Wohin geht die Reise?
 
+### Die Zukunft der Arbeit
+
+**Unsere Vision:** Die Zukunft der Arbeit sind nicht mehr Tools, sondern bessere Systeme. Wir bauen die Infrastruktur
+für organisationale Intelligenz.
+
+**Was das bedeutet:**
+
+- Systeme, die kognitive Last wirklich reduzieren
+- Augmentation wird Standard, nicht Ausnahme
+- Menschen fokussieren auf Deep Work, Systeme auf Koordination
+- German Engineering für KI-gestützte Org-Transformation
+
 ### Wird WeMake verkauft werden?
 
-- Wir bauen auf Eigenständigkeit. Verkauf ist kein Ziel, sondern ein mögliches Ereignis – falls es Mission und Menschen
-  stärkt.
-- Sekundärverkäufe sind uns lieber als vollständige Übernahmen.
+- Wir bauen auf Eigenständigkeit
+- Verkauf ist mögliches Ereignis, kein Ziel
+- Nur falls es Mission und Menschen stärkt
+- Sekundärverkäufe bevorzugt über vollständige Übernahmen
 
 ### 1 Mio. € bis 2027
 
-- Konkretes, messbares Ziel – nicht nur Umsatz, sondern wiederkehrender Wert und Wirkung.
-- Wir veröffentlichen Kennzahlen, die die Reise zeigen (ohne Vertrauliches zu teilen).
+**Das Ziel:**
 
-### Sekundärverkäufe statt kompletter Übernahme
+- Nicht nur Umsatz: Wiederkehrender Wert und messbare Wirkung
+- Metriken: Reduzierte kognitive Last, verbesserte Outcomes, Nutzerzufriedenheit
+- Wir veröffentlichen Impact-Kennzahlen (ohne Vertrauliches)
 
-- Mitarbeiter:innen sollen partizipieren können, ohne Kultur oder Mission zu verkaufen.
-- Wir bevorzugen Optionen, die Stabilität sichern und Wachstum ermöglichen.
+**Der Weg:**
+
+- Fokus auf High-Impact-Probleme
+- Wiederholbare, systemische Lösungen
+- Nachhaltige Kundenbindung durch echte Wirkung
+
+### Sekundärverkäufe statt Übernahme
+
+**Präferenz:**
+
+- Mitarbeiter:innen sollen partizipieren können
+- Kultur und Mission bleiben erhalten
+- Optionen für Stabilität + Wachstum
 
 </details><br/>
 
@@ -514,74 +819,91 @@ Persönlichkeitsmerkmale, die zum Erfolg bei uns führen
 
 ### Dich schnell einarbeiten
 
-- Lies dieses Handbuch und unsere Kern-Dokumente.
-- Starte mit einem kleinen, nützlichen Beitrag: eine Doku-Stelle verbessern, ein kleines Script, ein Test, ein Pattern.
+- **Lies**: Dieses Handbuch + Manifesto
+- **Verstehe**: Das fundamentale Problem der kognitiven Überlastung
+- **Starte klein**: Verbessere eine Doku, schreibe einen Test, dokumentiere ein Pattern
+- **Denke systemisch**: Wie fügt sich dein Beitrag ins größere Ganze?
 
-### Um Hilfe bitten, aber erst nachdem du es selbst versucht hast
+### Um Hilfe bitten, aber erst nach eigenem Versuch
 
-- Zeig deinen Versuch: Was du getan hast, was du beobachtet hast, was nicht funktioniert hat.
-- Frag spezifisch, damit wir gezielt helfen können.
+**Zeig deinen Versuch:**
+
+- Was hast du versucht?
+- Was hast du beobachtet?
+- Was hat nicht funktioniert?
+- Welchen Kontext brauchst du noch?
+
+**Stelle spezifische Fragen:**
+
+- Damit wir gezielt helfen können
+- Mit relevanten PRs, Issues, Docs verlinkt
 
 ### Keine Perfektion erwarten
 
-- „Perfekt“ ist oft langsam und fragil. „Klar + funktionsfähig + dokumentiert“ ist unser Sweet Spot.
-- Fehler sind okay; verschweigen nicht.
+- **"Klar + funktionsfähig + dokumentiert"** ist unser Sweet Spot
+- Perfekt ist oft langsam und fragil
+- Fehler sind okay; Verschweigen nicht
+- Iteration schlägt Perfektion
 
 ### Es besser machen
 
-- Hinterlasse alles ein Stück klarer, einfacher, sicherer als du es vorgefunden hast.
-- Schreibe die Doku, die du dir gewünscht hättest.
+**Das Scout-Prinzip:**
 
-### Nicht auf andere warten
+- Hinterlasse alles klarer, einfacher, sicherer
+- Refactoring ist Teil der Arbeit
+- Dokumentation verbessern ist echter Wert
+- Schreibe die Doku, die du dir gewünscht hättest
 
-- Ownership heißt handeln. Hole Kontext, entscheide, dokumentiere, iteriere.
-- Wenn du blockiert bist, sag es früh.
+### In Systemen denken
 
-### Eine Meinung haben
-
-- Sag, was du denkst – begründet, respektvoll, mit Bereitschaft, besser zu werden.
-- Änderst du deine Meinung, dokumentiere warum.
-
-### Um die Ecke denken
-
-- Such das dritte, vierte, fünfte Lösungsmuster.
-- Kombiniere Bestehendes neu – Clarity AI ist dafür gemacht.
+- **Frage immer**: Löst das das fundamentale Problem?
+- **Systemische Verbesserung**: Über Feature-Addition
+- **Integration**: Über Isolation
+- **Suche**: Das dritte, vierte, fünfte Lösungsmuster
+- **Kombiniere**: Bestehendes neu für systemische Effekte
 
 ### Keine Issues an Personen zuweisen
 
-- Wir arbeiten teamorientiert. Issues beschreiben Probleme; Teams committen zu Lösungen.
-- Verantwortungen sind klar, aber nicht personifiziert im Tracking.
+- **Teamorientiert**: Issues beschreiben Probleme; Teams committen zu Lösungen
+- **Verantwortungen**: Sind klar, aber nicht personifiziert im Tracking
+- **Ownership**: Ist Rolle, nicht Name im Ticket
 
 ### Nicht einfach mergen ohne Review
 
-- Mindestens ein Review – für Code, Dokus, Entscheidungen.
-- Review heißt Verantwortung teilen, nicht Bürokratie.
+- **Mindestens ein Review**: Für Code, Docs, Entscheidungen
+- **Review bedeutet**: Verantwortung teilen, Qualität sichern
+- **Systemischer Check**: Passt es ins große Ganze?
 
 ### PRs > Issues > Slack
 
-- Entscheidungen und änderbare Vorschläge gehören in PRs.
-- Ideen und Probleme in Issues.
-- Slack für Koordination und Menschliches.
-- Wenn’s wichtig ist, steht es nicht nur in Slack.
+**Hierarchie der Entscheidungsdokumentation:**
 
-### Dinge standardmäßig so öffentlich wie möglich machen
+- **PRs**: Für Entscheidungen und änderbare Vorschläge
+- **Issues**: Für Ideen, Probleme, Diskussionen
+- **Slack**: Für Koordination und Menschliches
+- **Wichtiges**: Steht nicht nur in Slack
 
-- Öffentlichkeit ist Default, Vertraulichkeit ist begründet.
-- Schreibe für zukünftige Leser:innen – kurz, klar, mit Links.
+### Dinge standardmäßig öffentlich
 
-### Proaktiv bei Community-Fragen sein
+- **Default**: Public (Problem-Definitionen, Lösungsansätze, Learnings)
+- **Begründet**: Vertraulichkeit (Security, Customer-Data)
+- **Für Zukunft schreiben**: Kurz, klar, mit Links
 
-- Antworte hilfreich, freundlich, ehrlich.
-- Wenn du’s nicht weißt: Sag es und finde es heraus.
+### Proaktiv bei Community-Fragen
+
+- **Antworte**: Hilfreich, freundlich, ehrlich
+- **Bei Unsicherheit**: Sag es und finde es heraus
+- **Teile Kontext**: Problem-Verständnis ist Mehrwert
 
 ### Und wenn du nicht hier arbeitest
 
-- Dieses Handbuch darfst du lesen, zitieren, kritisieren.
-- Wenn du denkst, etwas fehlt oder falsch ist: Eröffne ein Issue. Wir danken dir.
+- Du darfst dieses Handbuch lesen, zitieren, kritisieren
+- Wenn etwas fehlt oder falsch ist: Eröffne ein Issue
+- Wir danken dir für Feedback zu Problem und Lösung
 
 </details><br/>
 
 ---
 
-Hinweise zu internen Referenzen und Quellen: Wo sinnvoll, verlinken wir auf weiterführende, interne Dokumente. Diese
+**Hinweise zu internen Referenzen und Quellen:** Wo sinnvoll, verlinken wir auf weiterführende, interne Dokumente. Diese
 sind öffentlich einsehbar, solange sie keine vertraulichen Inhalte enthalten.
